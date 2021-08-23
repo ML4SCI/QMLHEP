@@ -1,0 +1,1 @@
+from quple.models.abstract_model import AbstractModel
