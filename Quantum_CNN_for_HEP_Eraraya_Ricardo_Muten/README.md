@@ -1,4 +1,4 @@
-> **This is a cloned repository for the ML4Sci archive. The main repository (and the most updated one) for this project can be found [here](https://github.com/eraraya-ricardo/qcnn-hep).**
+> **Note: This is a cloned repository for ML4Sci archive. The main repository (and the most updated one) for this project can be found [here](https://github.com/eraraya-ricardo/qcnn-hep).**
 
 
 <div align="center">
@@ -14,7 +14,7 @@
 A Google Summer of Code 2021 Project Repository.<br>
 This project aims to demonstrate quantum machine learning's potential, specifically Quantum Convolutional Neural Network (QCNN), in HEP events classification from particle image data.<br>The <b>code used in the research is wrapped as an open-source package</b> to ease future research in this field.<br><b>Check the [How to Use](#how-to-use) section to learn more about it.</b>
 
-  <a href="https://ml4sci.org/" target="_blank"><img alt="gsoc@ml4sci" height="200px" src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/gsoc%40ml4sci.jpeg" /></a>
+  <a href="https://ml4sci.org/" target="_blank"><img alt="gsoc@ml4sci" height="200px" src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gsoc%40ml4sci.jpeg" /></a>
     
 </div>
 
@@ -66,9 +66,11 @@ cd qcnn-hep
 python -m pip install -r requirements.txt
 python setup.py
 ```
+For a more detail step-by-step installation, please refer to [Docs and Tutorial](#docs-and-tutorial).
 
 ### Docs and Tutorial
-- Main Tutorial: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TWQgdVzKUITMNzIUFtyzq9MfuTfkyJVe?usp=sharing) or click [here](https://github.com/eraraya-ricardo/qcnn-hep/blob/main/tutorials/Main%20Tutorial.ipynb).
+- Docs: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ojCEutBoHu-L6Q3PyWSYI51MNIr3OF_k?usp=sharing) or download [here](https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/qcnn_drc_docs.ipynb).
+- Tutorial: [![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TWQgdVzKUITMNzIUFtyzq9MfuTfkyJVe?usp=sharing) or download [here](https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/qcnn_drc_tutorial.ipynb).
 
 ## Weekly Progress
 - Week 1: Looking and getting used to the dataset, train a classical ResNet[[1](#references)] model as a baseline.
@@ -83,18 +85,18 @@ python setup.py
 - Week 10: Cleaned up the repository, README, and the docs/tutorial notebook.
 <!---
 Notes:
-- A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/GSoC-QCNN/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.
+- A **more detail progress and specific To-Do list** is made every week as an [issue](https://github.com/eraraya-ricardo/qcnn-hep/issues), covering all the comments and suggestions received during Wednesday & Friday meeting.
 - Progress of the *N*-th week contains things that have been done in that week.
 - To-Do list of the *N*-th week that is obtained from the meeting in that week is to be done on the next week (*N+1*-th week). When all the tasks in the To-Do list are done, the issue is marked as closed.
 --->
 
 ## Project's Datasets
 
-### Primary Dataset: Electromagnetic Calorimeter (ECAL) Dataset
+### Photon-Electron Electromagnetic Calorimeter (ECAL) Dataset
 
 <p align="middle">
-  <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/photon%20full.png" title="Photon" />
-  <img src="https://raw.githubusercontent.com/eraraya-ricardo/GSoC-QCNN/main/assets/electron%20full.png" title="Electron" /> <br>
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/photon%20full.png" title="Photon" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/electron%20full.png" title="Electron" /> <br>
   <a>Averages of Photon (left) and Electron (right) image samples from the dataset.</a>
 </p>
   
@@ -103,14 +105,13 @@ The dataset contains images from two types of particles: photons (0) and electro
 - The intensity of the pixel corresponds to how much energy is measured in that cell.
 - In total, there are 498,000 samples, equally distributed between the two classes.
 - The size of the images are 32x32.
+  
+If you are interested on using the datast for your study, contact me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id) and I can connect you to the people at ML4Sci who have the dataset.
 
-The dataset can be obtained [here](https://github.com/ML4SCIHackathon/ML4SCI/tree/main/ParticleImagesChallenge).
-
-### Secondary Dataset
-#### Liquid Argon Time Projection Chamber (LArTPC) Dataset[[4](#references)]
+### Liquid Argon Time Projection Chamber (LArTPC) Dataset[[4](#references)]
 
 <p align="middle">
-  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/LArTPC_sample.png" title="LArTPC Dataset" /> <br>
+  <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/LArTPC_sample.png" title="LArTPC Dataset" /> <br>
   <a>An image sample for each class from LArTPC dataset.</a>
 </p>
 
@@ -121,19 +122,41 @@ The dataset contains images of simulated particle activities (μ+, e−, p+, π+
 - In total, there are 100 samples for each class.
 - Each particle’s momentum is set such that the mean range of the particle is about 2 meters, so the classification is not sensitive to the image size.
 - In this study, the images are scaled to 30x30, prepared by the original authors of the dataset.
+- You can check reference [[4](#references)] for more details of the dataset.
 
 The dataset can be obtained from the original authors of [[4](#references)] upon reasonable request.
 
-#### Quark-Gluon Dataset [[6](#references)]
-
-#### MNIST Dataset[[5](#references)]
+### Quark-Gluon Dataset[[6](#references)]
 
 <p align="middle">
-  <img height="300 px" src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/mnist_sample.png" title="MNIST Dataset" /> <br>
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-125-10k.png" title="Gluon" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/quark-125-10k.png" title="Quark" /> <br>
+  <a>Averages of Gluon (left) and Quark (right) image samples of the track channel from the subdataset of 10k samples.</a>
+</p>
+  
+<p align="middle">
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-40-10k.png" title="Gluon" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/quark-40-10k.png" title="Quark" /> <br>
+  <a>Cropped to 40 x 40.</a>
+</p>
+
+The dataset contains images of simulated quark and gluon jets. The image has three channels, the first channel is the reconstructed tracks of the jet, the second channel is the images captured by the electromagnetic calorimeter (ECAL) detector, and the third channel is the images captured by the hadronic calorimeter (HCAL) detector.
+  
+- The images have a resolution of 125 x 125 pixels (for every channel).
+- Since the original size of 125 x 125 pixels is too large for quantum computing simulation, we cropped the images into certain size. For now, we limit the current size to 40 x 40 pixels.
+- In this study, we focus mostly on the tracks channel.
+- You can check reference [[6](#references)] for more details of the dataset.
+
+If you are interested on using the datast for your study, contact me via [email](mailto:eraraya-ricardo@qlab.itb.ac.id) and I can connect you to the people at ML4Sci who have the dataset.
+
+### MNIST Dataset[[5](#references)]
+
+<p align="middle">
+  <img height="300 px" src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/mnist_sample.png" title="MNIST Dataset" /> <br>
   <a>An image sample for each class from MNIST dataset.</a>
 </p>
 
-The dataset contains images of grayscale (8 bit) handwritten digits, has a training set of 60,000 examples, and a test set of 10,000 examples.
+The dataset contains images of grayscale (8 bit) handwritten digits, 28 x 28 pixels, has a training set of 60,000 examples, and a test set of 10,000 examples.
 
 It can be obtained from [[5](#references)].
 
@@ -176,7 +199,7 @@ ___
 | 3 | 2 | 370 | 0.707 | 0.636 | ±670 |
 
 <p align="middle">
-  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/qcnn-v1.1_heatmap.png" title="Heatmap Representation of the Table Above" /> <br>
+  <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/qcnn-v1.1_heatmap.png" title="Heatmap Representation of the Table Above" /> <br>
   <a>Validation AUC for Varying the Number of Layers and Qubits (0.0 = not tested).</a>
 </p>
 
@@ -192,17 +215,17 @@ ___
 > optimizer: RMSProp(learning_rate=0.01, rho=0.99, epsilon=1e-08)
 
 <p align="middle">
-  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_electron.png" title="e- vs μ+" /> <br>
+  <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/muon_electron.png" title="e- vs μ+" /> <br>
   <a>Sample Images of e- vs μ+.</a>
 </p>
 
 <p align="middle">
-  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_proton.png" title="p+ vs μ+" /> <br>
+  <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/muon_proton.png" title="p+ vs μ+" /> <br>
   <a>Sample Images of p+ vs μ+.</a>
 </p>
 
 <p align="middle">
-  <img src="https://github.com/eraraya-ricardo/GSoC-QCNN/blob/main/assets/muon_pion-plus.png" title="π+ vs μ+" /> <br>
+  <img src="https://github.com/eraraya-ricardo/qcnn-hep/blob/main/assets/muon_pion-plus.png" title="π+ vs μ+" /> <br>
   <a>Sample Images of π+ vs μ+.</a>
 </p>
 
@@ -226,8 +249,15 @@ ___
 
 \-----
 
-> Results reported in [[4](#references)] (as a comparison). The model developed in this project produced similar results (with the QCNN) with less number of qubits and trainable parameters.
+> Comparison of Best Models.<br>The model developed in this project (<b>*</b>) produced similar results with the QCNN and classical CNN models from [[4](#references)] (<b>†</b>) with less number of qubits and trainable parameters. Reference [[4](#references)] didn't report their AUC scores.
+  
+| Classes | Model | Num. Qubits | Num. Trainable Params | Train Accuracy | Test Accuracy | Train AUC | Test AUC |
+| :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
+| e- vs μ+ | QCNN-DRC<b>*</b><br>QCNN<b>†</b><br>CNN<b>†</b> | 2<br>9<br>(classical) | 220<br>472<br>498 | 1.0<br>1.0<br>0.9938 | 0.950<br>0.925<br>0.950 | 1.0<br>-<br>- | 0.996<br>-<br>- |
+| p+ vs μ+ | QCNN-DRC<b>*</b><br>QCNN<b>†</b><br>CNN<b>†</b> | 1<br>9<br>(classical) | 130<br>472<br>498 | 1.0<br>1.0<br>0.9125 | 0.950<br>0.975<br>0.80 | 1.0<br>-<br>- | 0.980<br>-<br>- |
+| π+ vs μ+ | QCNN-DRC<b>*</b><br>QCNN<b>†</b><br>CNN<b>†</b> | 2<br>9<br>(classical) | 220<br>472<br>498 | 1.0<br>0.9688<br>0.975 | 0.950<br>0.975<br>0.825 | 1.0<br>-<br>- | 0.977<br>-<br>- |
 
+<!---
 | Model | Classes | Num. Qubits | Num. Trainable Params | Train Accuracy | Test Accuracy |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
 | QCNN | e- vs μ+ | 9 | 472 | 1.0 | 0.925 |
@@ -236,13 +266,20 @@ ___
 | CNN | e- vs μ+ | (classical) | 498 | 0.9938 | 0.95 |
 | CNN | p+ vs μ+ | (classical) | 498 | 0.9125 | 0.80 |
 | CNN | π+ vs μ+ | (classical) | 498 | 0.975 | 0.825 |
+--->
 
 ##### Test on Quark-Gluon Dataset
 > **This part is still a working progress**. A much higher specs computational device (more RAMs) is needed for training the model because this dataset is huge.<br>Early testing with small samples showed a promising results. The training accuracies and AUCs are high, indicates that the model was able to learn how to differentiate the data. Low test metrics indicates overfitting, the model failed to generalize well -> we need to train the model on larger number of samples.
   
-> 2 classes, 850 training samples (425 per class), 150 testing samples (75 per class), 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: log scaling -> MinMax scaling
+> 2 classes, 850 training samples (425 per class), 150 testing samples (75 per class), 200 epochs, 128 batch size, *varying* qubits, *varying* layers, filter size = [3, 3], stride = [2, 1], followed by classical head [8, 2] with activation [relu, softmax], classical preprocessing: crop to 40x40 -> log scaling -> MinMax scaling
 
 > optimizer: Adam(learning_rate=lr_schedule)
+  
+<p align="middle">
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/gluon-40-1k.png" title="Gluon" />
+  <img src="https://raw.githubusercontent.com/eraraya-ricardo/qcnn-hep/main/assets/quark-40-1k.png" title="Quark" /> <br>
+  <a>Averages of Gluon (left) and Quark (right) image samples of the track channel from the subdataset of 1k samples after cropping to 40 x 40.</a>
+</p>
 
 | Num. Qubits  | Num. Layers | Num. Trainable Params | Train AUC | Test AUC | Train Accuracy | Test Accuracy | Runtime (secs per epoch) |
 | ------------ | ----------- | :-------------------: | :-------: | :------: | :------------: | :-----------: | :----------------------: |
@@ -312,7 +349,19 @@ ___
 1. **lr_schedule**
 
     ```
-    lr = 1e-3
+    def lr_schedule(epoch):
+        """Learning Rate Schedule
+
+        Learning rate is scheduled to be reduced after 80, 120, 160, 180 epochs.
+        Called automatically every epoch as part of callbacks during training.
+
+        # Arguments
+            epoch (int): The number of epochs
+
+        # Returns
+            lr (float32): learning rate
+        """
+        lr = 1e-3
         if epoch > 180:
             lr *= 0.5e-3
         elif epoch > 160:
@@ -321,6 +370,15 @@ ___
             lr *= 1e-2
         elif epoch > 80:
             lr *= 1e-1
+        print('Learning rate: ', lr)
+        return lr
+  
+    # Both `lr_scheduler` and `lr_reducer` are used for `callbacks` argument of Keras' model training API
+    lr_scheduler = tf.keras.callbacks.LearningRateScheduler(lr_schedule)
+    lr_reducer = tf.keras.callbacks.ReduceLROnPlateau(factor=np.sqrt(0.1),
+                                   cooldown=0,
+                                   patience=5,
+                                   min_lr=0.5e-6)
     ```
 
 ## References
