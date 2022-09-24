@@ -1,0 +1,11 @@
+numpy
+pennylane
+qutip
+sklearn
+matplotlib
+imageio
+cirq
+tensorflow-quantum
+sympy
+tensorflow
+energyflow
