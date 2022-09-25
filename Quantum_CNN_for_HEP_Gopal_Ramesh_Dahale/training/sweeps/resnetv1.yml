@@ -1,0 +1,39 @@
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}
+  - "--wandb"
+  - ${args}
+  - --labels-to-categorical
+  - --standardize
+program: training/train.py
+name: MNIST-Resnetv1
+method: grid
+metric:
+  goal: minimize
+  name: val_loss
+early_terminate:
+  type: hyperband
+  min_iter: 10
+parameters:
+  data-class: 
+    value: MNIST
+  resize:
+    value: "32 32"
+  binary-data:
+    value: "0 1"
+  model-class:
+    value: ResnetV1
+  resnet-depth:
+    values: [20,32,44,56,110]
+  epochs:
+    value: 20
+  validation-split:
+    value: 0.2
+  num-workers:
+    value: 20
+  learning-rate:
+    values: [0.01, 0.001, 0.0003]
+  percent-samples:
+    value: 1
+  
