@@ -1,4 +1,5 @@
 # Quantum Transformers Alessandro Tesi
+*Note: Some circuits printed with SVG may not display correctly on GitHub. Please try viewing them with VS Code or Jupyter Notebook.*
 
 This project aims to implement the  Orthogonal patch wise neural network outlined in the paper [Quantum Vision Transformers](https://arxiv.org/abs/2209.08167) by El Amine Cherrat, Iordanis Kerenidis, Natansh Mathur, Jonas Landman, Martin Strahm, Yun Yvonna Li, harnessing the power of quantum computing to enhance the capabilities of vision transformers. 
 
