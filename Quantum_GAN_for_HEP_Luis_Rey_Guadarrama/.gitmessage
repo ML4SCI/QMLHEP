@@ -1,0 +1,15 @@
+# Commit Message Template for qGAN Tests
+
+# Title: Brief summary of the test
+Test [Test ID] - [Brief Description of Test]
+
+# Description: Detailed description of the test parameters and results
+## Parameters Used
+- Number of Qubits: [value]
+- Number of Auxiliary Qubits: [value]
+- Circuit Depth: [value]
+- Number of Generators: [value]
+- Generator Learning Rate: [value]
+- Discriminator Learning Rate: [value]
+- Batch Size: [value]
+- Number of Samples: [value]
