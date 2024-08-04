@@ -127,11 +127,11 @@ def evaluate(state: TrainState, eval_dataloader, num_classes: int,
             print(f"y_true = {y_true}")
         if num_classes == 2:
             eval_fpr, eval_tpr, _ = roc_curve(y_true, y_pred)
-            eval_auc = 100.0 * auc(eval_fpr, eval_tpr)
+            eval_auc = auc(eval_fpr, eval_tpr)
         else:
             eval_fpr, eval_tpr = [], []
-            eval_auc = 100.0 * roc_auc_score(y_true, y_pred, multi_class='ovr')
-        progress_bar.set_postfix_str(f"Loss = {eval_loss:.4f}, AUC = {eval_auc:.2f}%")
+            eval_auc = roc_auc_score(y_true, y_pred, multi_class='ovr')
+        progress_bar.set_postfix_str(f"Loss = {eval_loss:.4f}, AUC = {eval_auc:.3f}")
     return eval_loss, eval_auc, eval_fpr, eval_tpr
 
 
@@ -202,29 +202,58 @@ def train_and_evaluate(model: flax.linen.Module, train_dataloader, val_dataloade
     )
 
     best_val_auc, best_epoch, best_state = 0.0, 0, None
+    total_train_time = 0.0
     start_time = time.time()
+
+    metrics = {
+        'train_losses': [],
+        'val_losses': [],
+        'train_aucs': [],
+        'val_aucs': [],
+        'test_loss': 0.0,
+        'test_auc': 0.0,
+        'test_fpr': [],
+        'test_tpr': [],
+    }
+
     for epoch in range(num_epochs):
         with tqdm(total=len(train_dataloader), desc=f"Epoch {epoch+1:3}/{num_epochs}", unit="batch", bar_format=TQDM_BAR_FORMAT) as progress_bar:
+            epoch_train_time = time.time()
             for inputs_batch, labels_batch in train_dataloader:
                 state = train_step(state, inputs_batch, labels_batch, train_key)
                 progress_bar.update(1)
+            epoch_train_time = time.time() - epoch_train_time
+            total_train_time += epoch_train_time
 
+            train_loss, train_auc, _, _ = evaluate(state, train_dataloader, num_classes, tqdm_desc=None, debug=debug)
             val_loss, val_auc, _, _ = evaluate(state, val_dataloader, num_classes, tqdm_desc=None, debug=debug)
-            progress_bar.set_postfix_str(f"Loss = {val_loss:.4f}, AUC = {val_auc:.2f}%")
+            progress_bar.set_postfix_str(f"Loss = {val_loss:.4f}, AUC = {val_auc:.3f}, Train time = {epoch_train_time:.2f}s")
 
+            metrics['train_losses'].append(train_loss)
+            metrics['val_losses'].append(val_loss)
+            metrics['train_aucs'].append(train_auc)
+            metrics['val_aucs'].append(val_auc)
             if val_auc > best_val_auc:
                 best_val_auc = val_auc
                 best_epoch = epoch + 1
                 best_state = state
             if use_ray:
                 session.report({'val_loss': val_loss, 'val_auc': val_auc, 'best_val_auc': best_val_auc, 'best_epoch': best_epoch})
+    metrics['train_losses'] = jnp.array(metrics['train_losses'])
+    metrics['val_losses'] = jnp.array(metrics['val_losses'])
+    metrics['train_aucs'] = jnp.array(metrics['train_aucs'])
+    metrics['val_aucs'] = jnp.array(metrics['val_aucs'])
 
-    print(f"Total training time = {time.time()-start_time:.2f}s, best validation AUC = {best_val_auc:.2f}% at epoch {best_epoch}")
+    print(f"Best validation AUC = {best_val_auc:.3f} at epoch {best_epoch}")
+    print(f"Total training time = {total_train_time:.2f}s, total time (including evaluations) = {time.time() - start_time:.2f}s")
 
     # Evaluate on test set using the best model
     assert best_state is not None
     test_loss, test_auc, test_fpr, test_tpr = evaluate(best_state, test_dataloader, num_classes, tqdm_desc="Testing")
+    metrics['test_loss'] = test_loss
+    metrics['test_auc'] = test_auc
+    metrics['test_fpr'] = test_fpr
+    metrics['test_tpr'] = test_tpr
     if use_ray:
         session.report({'test_loss': test_loss, 'test_auc': test_auc})
-    return test_loss, test_auc, test_fpr, test_tpr
-    
+    return metrics
