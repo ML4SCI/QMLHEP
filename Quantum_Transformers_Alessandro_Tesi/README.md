@@ -3,8 +3,6 @@
 
 This project aims to implement the  Orthogonal patch wise neural network outlined in the paper [Quantum Vision Transformers](https://arxiv.org/abs/2209.08167) by El Amine Cherrat, Iordanis Kerenidis, Natansh Mathur, Jonas Landman, Martin Strahm, Yun Yvonna Li, harnessing the power of quantum computing to enhance the capabilities of vision transformers. 
 
-My work is primarily based on TensorFlow Quantum, a robust software framework that facilitates the construction, simulation, and training of quantum machine learning models. [TensorFlow Quantum: A Software Framework for Quantum Machine Learning](https://arxiv.org/abs/2003.02989) by Michael Broughton, Guillaume Verdon, Trevor McCourt, Antonio J. Martinez, Jae Hyeon Yoo, Sergei V. Isakov, Philip Massey, Ramin Halavati, Murphy Yuezhen Niu, Alexander Zlokapa, Evan Peters, Owen Lockwood, Andrea Skolik, Sofiene Jerbi, Vedran Dunjko, Martin Leib, Michael Streif, David Von Dollen, Hongxiang Chen, Shuxiang Cao, Roeland Wiersema, Hsin-Yuan Huang, Jarrod R. McClean, Ryan Babbush, Sergio Boixo, Dave Bacon, Alan K. Ho, Hartmut Neven, Masoud Mohseni.
-
 Furthermore, I draw inspiration and insights from last year's Google Summer of Code (GSoC) projects focused on Quantum Vision Transformers. These projects, documented in detail on [Sal's GSoC blog](https://salcc.github.io/blog/gsoc23/) and [Eyüp B. Ünlü's Medium post](https://medium.com/@eyupb.unlu/gsoc-2023-with-ml4sci-quantum-transformer-for-high-energy-physics-analysis-final-report-cd9ed594e4a2).
 
 ## Datasets
@@ -17,31 +15,26 @@ The architectures have been evaluated on the following datasets:
 
 ## Structure
 
-Below is an overview of the project's structure:
+The project is organized as follows:
 
-### `QViT_paper_circuits.ipynb`
+### Main Directory:
+- **LICENSE**: Contains the licensing information for the project.
+- **README**: Provides an overview of the project, its objectives, and structure.
+- **Pennylane/**: A folder dedicated to implementations using Pennylane.
+  - **MNIST.ipynb**: Contains a classical transformer, a quantum neural network, a quantum self-attention transformer, and a full quantum transformer architecture tested on the MNIST dataset.
+  - **Photon Electron.ipynb**: Implements the same models as above but evaluated on the Electron-Photon dataset.
+  - **Quark Gluon.ipynb**: Implements the same models as above but evaluated on the Quark-Gluon dataset.
+  - **QViT Circuits Pennylane/**: Contains the implementation of circuits from the *Quantum Vision Transformers* paper using Pennylane.
+  - **requirements.txt**: Lists the dependencies and libraries required for running the Pennylane notebooks.
 
-This notebook contains examples and implementations of the quantum circuits proposed in the foundational papers relevant to this project.
+- **Tensorflow Quantum/**: A folder focused on implementations using Tensorflow Quantum.
+  - **Compound Transformer.ipynb**: Implements a compound transformer architecture, tested on the MNIST dataset (binary classification of digits 3 and 6).
+  - **Quantum Orthogonal Neural Network.ipynb**: Implements a quantum orthogonal neural network, also tested on the MNIST dataset (binary classification of digits 3 and 6).
+  - **Quantum Circuits.py**: Contains Python code for implementing the quantum circuits from the paper.
+  - **QViT Paper Circuits.ipynb**: Contains the implementation of circuits from the *Quantum Vision Transformers* paper using Tensorflow Quantum (Cirq).
+  - **requirements.txt**: Lists the dependencies and libraries required for running the Tensorflow Quantum notebooks. 
 
-- **Kerenidis, I., Landman, J., & Mathur, N. (2021).** *Classical and Quantum Algorithms for Orthogonal Neural Networks.*
-- **Landman, J., Mathur, N., Li, Y. Y., Strahm, M., Kazdaghli, S., Prakash, A., & Kerenidis, I. (2022).** *Quantum Methods for Neural Networks and Application to Medical Image Classification.*
-- **Cherrat, E. A., Kerenidis, I., Mathur, N., Landman, J., Strahm, M., & Li, Y. Y. (2022).** *Quantum Vision Transformers.*
-
-
-### `classic/`
-
-The `classic` directory contains notebooks and scripts where a traditional vision transformer model is trained and evaluated. These classic models serve as benchmarks for comparison against quantum counterparts. This directory includes:
-
-
-### `quantum/`
-
-The `quantum` directory is subdivided into folders representing different quantum neural network architectures:
-
-- **`Orthogonal NN/`**: Contains notebooks and code for implementing orthogonal neural networks as described in the referenced papers.
-  
-- **`Transformer/`**: Focuses on quantum transformers, incorporating the architecture and training methodologies specific to quantum versions of vision transformers. 
-  
-- **`Compound Transformer/`**: This folder investigates a novel architecture introduced in the paper *Quantum Vision Transformers*, which combines elements of both Transformers and MLP mixers leveraging quantum NNs.
+This structure allows for the exploration of quantum neural network architectures across different datasets and frameworks (Pennylane and Tensorflow Quantum). Each folder contains both classical and quantum models, as well as circuit implementations from the referenced papers.
 
 ### Additional Resources
 
