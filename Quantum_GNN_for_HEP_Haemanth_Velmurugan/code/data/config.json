@@ -1,0 +1,13 @@
+{
+  "NUM JETS": 100000,
+  "TRAIN": 0.8,
+  "VAL": 0.1,
+  "TEST": 0.1,
+  "NODES": 3,
+  "MIN PARTICLES": 10,
+  "MAX PARTICLES": 120,
+  "PATH": "C:/Users/HAEMANTH/Documents/Internships/GSoC/",
+  "PT THRESHOLD": 1e-10,
+  "CONNECTIONS": 3,
+  "BATCH SIZE": 64
+}
