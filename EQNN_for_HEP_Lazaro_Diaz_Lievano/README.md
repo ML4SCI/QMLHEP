@@ -23,16 +23,15 @@
 
 ## Summary
 
-So far, we have successfully implemented an equivariant quantum convolutional neural network (EQCNN) that maintains invariance under the p4m symmetry group, which includes rotations of 90° and reflections over the X and Y axes. The model has demonstrated strong performance on both benchmark datasets: MNIST and Fashion MNIST.
+We propose an Equivariant Quantum Neural Network (EQNN) and an Equivariant Hybrid Quantum-Classical Neural Network architecture that leverages symmetries commonly present in image data, specifically roto-reflection symmetries. By incorporating symmetries such as rotations and reflections into the quantum neural network's design, we can significantly reduce the number of trainable parameters, thereby decreasing the model's complexity and improving its efficiency. This method enhances learning capabilities with smaller datasets while also promoting better generalization. We evaluate the performance of our model using standard benchmark datasets for image classification and compare it against other quantum models.
 
 ## Introduction
 
-The investigation of symmetries has long been a cornerstone in the analysis of physical systems. As formalized by Noether’s theorem, conserved quantities are inherently linked to the symmetries present within the system. In the field of high-energy physics, the study of symmetries has played a key role in shaping the Standard Model, which describes three of the four fundamental forces in nature. 
+In this project, we introduce Equivariant Quantum Neural Networks (EQNNs) and equivariant hybrid quantum-classical architectures designed to exploit symmetries in image data, such as rotations and reflections. By embedding these geometric transformations directly into the neural network architecture, we aim to reduce the number of trainable parameters and increase computational efficiency. This approach is particularly suited for tasks like image classification, where symmetries play a crucial role in recognizing patterns. Equivariant models make it possible to achieve better performance with smaller datasets by reducing the model's complexity and improving generalization.
 
-New studies have demonstrated the effectiveness of Equivariant Quantum Neural Networks (EQNNs) in utilizing symmetries in quantum machine learning (QML). The project focuses on exploring various symmetries present in image datasets, such as reflections, rotations, and translations. The goal is to develop a comprehensive framework for building Equivariant Quantum Convolutional Neural Networks (EQCNNs) specifically designed for image symmetries as p4m, which consists of rotations by 90° and reflections along the X and Y axes. By establishing this framework, we aim to simplify the creation and use of equivariant neural networks, making it easier to apply them to address challenges in high-energy physics.
+One of the key advantages of using equivariant models is their ability to streamline the learning process by minimizing the number of parameters, which leads to faster training and a reduced risk of overfitting. These models also benefit from weight-sharing, allowing the same set of weights to be applied across different symmetric transformations, further boosting computational efficiency. By being invariant to specific symmetries, the model can effectively learn from limited data without relying on additional data augmentation techniques.
 
-Specifically, this work aims to use the implemented EQCNN to classify quark-versus-gluon-initiated jet events from the dataset constructed by [Andrews et al.](https://www.sciencedirect.com/science/article/pii/S0168900220307002?via%3Dihub) and [electron-photon events](https://indico.cern.ch/event/567550/papers/2629451/files/7515-end-end-event_v4.pdf).
-
+However, it is important to ensure that the data reflects the symmetries embedded in the model. If the data does not possess these symmetries, enforcing equivariance may limit the model’s expressivity, potentially leading to suboptimal results. Therefore, careful alignment between the symmetries in the model and the properties of the data is essential for optimal performance.
 
 
 ## Datasets
@@ -53,31 +52,46 @@ Specifically, this work aims to use the implemented EQCNN to classify quark-vers
 It Contains the modules to develop Equivariant Quantum Convolutional Neural Networks (EQCNN) and generic Quantum Convolutional Neural Networks (QCNN) with different quantum convolutional filters.
 
 Modules:
-- **data.py**: defines a function to load and process datasets.
-- **embedding.py**: matches the embedding type to encode classical data into quantum states.
-- **unitary.py**: contains the set of convolutional filters and pooling layers.
-- **QCNN_circuit.py**: constructs the EQCNN and QCNN architectures.
-- **Training.py**: defines cost functions (MSE and BCE) and trains the model for a given architecture, dataset, and hyperparameters.
-- **prueba.py**: module just for testing.
-- **Benchmarking.py**: defines the accuracy and a function to benchmark different given models.
-- **result.py**: executes the benchmarking function for a given set of models, types of encodings, a dataset, and a cost function. Returns the loss history and accuracy for each model and setting.
-- **CNN.py**: performs benchmarking for different settings for classical Convolutional Neural Networks.
-- **hep_dataset_processing.py**: loads and preprocesses the HEP datasets.
-
-Notebooks:
-- **Fashion_MNIST_EQCNN.ipynb**
-- **MNIST_EQCNN.ipynb**
-- **results_benchmark_EQCNNvsQCNN.ipynb**
+- **data/data.py**: defines a function to load and process datasets corresponding to quatum models.
+- **data/hybrid_data.py** defines a function to load and process datasets corresponding to hybrid models.
+- **hep_processing/hep_dataset_processing.py**: loads and preprocesses the HEP datasets.
+- **hep_processing/electron_photon_processing.ipynb**: loads and preprocesses the electron_photon dataset.
+- **models/utils/embedding.py**: matches the embedding type to encode classical data into quantum states.
+- **models/utils/unitary.py**: contains the set of convolutional filters and pooling layers.
+- **models/QCNN_circuit.py**: constructs the EQCNN and QCNN architectures.
+- **models/hybird_models.py**: constructs the hybrid models: both equivariant and no-equivariant.
+- **training/Training.py**: defines cost functions (MSE and BCE) and trains the model for a given architecture, dataset, and hyperparameters.
+- **benchmarking/Benchmarking.py**: defines the accuracy and a function to benchmark different given models.
+- **benchmarking/result.py**: executes the benchmarking function for a given set of models, types of encodings, a dataset, and a cost function. Returns the loss history and accuracy for each model and setting.
+- **benchmarking/CNN.py**: performs benchmarking for different settings for classical Convolutional Neural Networks.
 
 ## demos_notebooks/
-Here we have the same Jupyter Notebook examples of EQCNN to perform binary classification on MNIST and Fashion MNIST datasets.
+- **Classical/classical_euivariant_CNN_Fashion_MNIST.ipynb**
+- **Classical/classical_equivariant_CNN_MNIST.ipynb**
+- **Classical/electron_photon_CNN.ipynb**
+- **Classical/Quark_gluon_CNN.ipynb**
+- **Hybrid/Equiv_Hybrid_EQCNN_Fashion_MNIST.ipynb**
+- **Hybrid/Equiv_Hybrid_EQCNN_MNIST.ipynb**
+- **Hybrid/Hybrid_QNN_Electron_photon.ipynb**
+- **Hybrid/Hybrid_QNN_Fashion_MNIST.ipynb**
+- **Hybrid/Hybrid_QNN_MNIST.ipynb**
+- **Quantum/Electron-Photon_EQCNN.ipynb**
+- **Quantum/Fashion_MNIST_EQCNN.ipynb**
+- **Quantum/MNIST_EQCNN.ipynb**
+- **Quantum/p4m_EQNN_mnist.ipynb**
+- **Quantum/Quark_Gluon_EQCNN.ipynb**
+- **Quantum/REFLECTION_EQNN_mnist.ipynb**
+
 
 ## test/
 Here you can find Jupyter notebooks that run on Google Colab:
-- **p4m_EQCNN_mnist.ipynb** 
-- **REFLECTION_EQNN_mnist.ipynb**
-- **Quark_gluon_study_CNN_testing.ipynb** (to get the dataset, send me an email)
-
+- **Electron-Photon_EQCNN.ipynb** 
+- **Fashion_MNIST_EQCNN.ipynb**
+- **hybrid_models_Fashion_MNIST.ipynb**
+- **hybrid_models_MNIST.ipynb**
+- **MNIST_EQCNN.ipynb**
+- **Quark_Gluon_EQCNN.ipynb**
+  
 Additional:
 - **requirements.txt**: Lists all the necessary packages to run the code.
 - **GSOC_2024_EQNN_midterm.pdf**: Contains a presentation of the project's progress up to the midterm evaluation of the Google Summer of Code 2024 program.
