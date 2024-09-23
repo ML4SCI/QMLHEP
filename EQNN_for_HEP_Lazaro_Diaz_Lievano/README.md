@@ -84,7 +84,6 @@ Modules:
 
 
 ## test/
-Here you can find Jupyter notebooks that run on Google Colab:
 - **Electron-Photon_EQCNN.ipynb** 
 - **Fashion_MNIST_EQCNN.ipynb**
 - **hybrid_models_Fashion_MNIST.ipynb**
