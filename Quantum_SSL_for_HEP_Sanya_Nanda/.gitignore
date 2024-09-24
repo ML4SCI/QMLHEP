@@ -1,5 +1,5 @@
 # My folders containing big non-code related files
-data/
+# data/
 saved_models/
 notebooks/hybrid_cnn_base_2/
 notebooks/Experiment_electron_photon/wandb
