@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "qml-ssl"
+version = "0.1.0"
+description = "GSoC24 Project: Quantum Machine Learning"
+authors = ["duydl <duy.dole.00ece@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "qml_ssl", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.4.1"
+torch-geometric = "^2.6.0"
+matplotlib = "^3.9.2"
+lightning = "^2.4.0"
+pennylane = "^0.38.0"
+torchvision = "^0.19.1"
+seaborn = "^0.13.2"
+h5py = "^3.11.0"
+pytorch-metric-learning = "^2.6.0"
+scikit-learn = "^1.5.2"
+qutip = "^5.0.4"
+comet-ml = "^3.47.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
