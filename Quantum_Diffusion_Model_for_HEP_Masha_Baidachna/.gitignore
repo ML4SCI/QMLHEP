@@ -1,0 +1,6 @@
+.venv
+
+# Dataset size is 3.6 GB so it is not added
+# Reach out for download
+data/quark-gluon_train-set_n793900.hdf5
+data/QG1_normalized_64x64_10k
