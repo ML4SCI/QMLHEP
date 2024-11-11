@@ -122,19 +122,13 @@ Classic **MNIST** dataset used for initial validations and debugging.
 
 **ECAL** images of electrons and photons from the CMS experiment.
 
-- Dataset Link: [Photon HDF5](https://cernbox.cern.ch/remote.php/dav/public-files/AtBT8y4MiQYFcgc/SinglePhotonPt50_IMGCROPS_n249k_RHv1.hdf5), [Electron HDF5](https://cernbox.cern.ch/remote.php/dav/public-files/FbXw3V4XNyYB3oA/SingleElectronPt50_IMGCROPS_n249k_RHv1.hdf5)
-
 ### Quark Gluon Image
 
 Images of Quark and Gluon-initiated jets for classification tasks.
 
-- Dataset link: [Quark-Gluon Dataset (Kaggle)](https://www.kaggle.com/datasets/prabhashkumarjha/quark-gluon-data-set-n139306-hdf5)
-
 ### Quark Gluon Jet
 
 Synthetic **Quark-Gluon Particle Jets** generated using the **PYTHIA** event generator.
-
-- Dataset link: [Quark-Gluon Particle Jets](https://zenodo.org/records/3164691)
 
 ### Quantum Machine 7
 
