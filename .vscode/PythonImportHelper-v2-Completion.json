@@ -1,0 +1,1628 @@
+[
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "load_digits",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "load_iris",
+        "importPath": "sklearn.datasets",
+        "description": "sklearn.datasets",
+        "isExtraImport": true,
+        "detail": "sklearn.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "MinMaxScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "QSVT",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "quantum_lcu_block",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumSumBlock",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "KANLayer",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "QSVT",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "quantum_lcu_block",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumSumBlock",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "KANLayer",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "QSVT",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "quantum_lcu_block",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumSumBlock",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "KANLayer",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "QSVT",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "quantum_lcu_block",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumSumBlock",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "KANLayer",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "QSVT",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "quantum_lcu_block",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumSumBlock",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "KANLayer",
+        "importPath": "HybridQKAN_model_components",
+        "description": "HybridQKAN_model_components",
+        "isExtraImport": true,
+        "detail": "HybridQKAN_model_components",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "torch.optim",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.optim",
+        "description": "torch.optim",
+        "detail": "torch.optim",
+        "documentation": {}
+    },
+    {
+        "label": "pennylane",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pennylane",
+        "description": "pennylane",
+        "detail": "pennylane",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "h5py",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "h5py",
+        "description": "h5py",
+        "detail": "h5py",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "QSVT",
+        "importPath": "qsvt_sinepoly",
+        "description": "qsvt_sinepoly",
+        "isExtraImport": true,
+        "detail": "qsvt_sinepoly",
+        "documentation": {}
+    },
+    {
+        "label": "QSVT",
+        "importPath": "qsvt_sinepoly",
+        "description": "qsvt_sinepoly",
+        "isExtraImport": true,
+        "detail": "qsvt_sinepoly",
+        "documentation": {}
+    },
+    {
+        "label": "quantum_lcu_block",
+        "importPath": "LCU",
+        "description": "LCU",
+        "isExtraImport": true,
+        "detail": "LCU",
+        "documentation": {}
+    },
+    {
+        "label": "quantum_lcu_block",
+        "importPath": "LCU",
+        "description": "LCU",
+        "isExtraImport": true,
+        "detail": "LCU",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumSumBlock",
+        "importPath": "quantum_summation",
+        "description": "quantum_summation",
+        "isExtraImport": true,
+        "detail": "quantum_summation",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumSumBlock",
+        "importPath": "quantum_summation",
+        "description": "quantum_summation",
+        "isExtraImport": true,
+        "detail": "quantum_summation",
+        "documentation": {}
+    },
+    {
+        "label": "KANLayer",
+        "importPath": "SplineKANlayer",
+        "description": "SplineKANlayer",
+        "isExtraImport": true,
+        "detail": "SplineKANlayer",
+        "documentation": {}
+    },
+    {
+        "label": "KANLayer",
+        "importPath": "SplineKANlayer",
+        "description": "SplineKANlayer",
+        "isExtraImport": true,
+        "detail": "SplineKANlayer",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "BSpline",
+        "importPath": "scipy.interpolate",
+        "description": "scipy.interpolate",
+        "isExtraImport": true,
+        "detail": "scipy.interpolate",
+        "documentation": {}
+    },
+    {
+        "label": "ttest_ind",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumKANClassifier",
+        "kind": 6,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "class QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=64, degree=4, num_classes=10):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=num_classes)\n    def forward(self, X):",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "digits",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "digits = load_digits()\nX = digits.data[:1000]   # 1000 samples\ny = digits.target[:1000]\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(\n    X_tensor, y_tensor, test_size=0.2, random_state=42\n)",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "X = digits.data[:1000]   # 1000 samples\ny = digits.target[:1000]\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(\n    X_tensor, y_tensor, test_size=0.2, random_state=42\n)\nclass QuantumKANClassifier(nn.Module):",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "y = digits.target[:1000]\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(\n    X_tensor, y_tensor, test_size=0.2, random_state=42\n)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=64, degree=4, num_classes=10):",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(\n    X_tensor, y_tensor, test_size=0.2, random_state=42\n)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=64, degree=4, num_classes=10):\n        super().__init__()",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "X_scaled",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "X_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(\n    X_tensor, y_tensor, test_size=0.2, random_state=42\n)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=64, degree=4, num_classes=10):\n        super().__init__()\n        self.num_features = num_features",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "X_tensor",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "X_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(\n    X_tensor, y_tensor, test_size=0.2, random_state=42\n)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=64, degree=4, num_classes=10):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "y_tensor",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "y_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(\n    X_tensor, y_tensor, test_size=0.2, random_state=42\n)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=64, degree=4, num_classes=10):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "model = QuantumKANClassifier()\ncriterion = nn.CrossEntropyLoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "criterion",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "criterion = nn.CrossEntropyLoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "optimizer",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "optimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "model = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "X_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "y_train",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "y_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "X_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "y_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)\n    loss = criterion(outputs, y_train)",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "num_epochs",
+        "kind": 5,
+        "importPath": "experiments.digits",
+        "description": "experiments.digits",
+        "peekOfCode": "num_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)\n    loss = criterion(outputs, y_train)\n    loss.backward()\n    optimizer.step()\n    with torch.no_grad():\n        pred_train = outputs.argmax(dim=1)",
+        "detail": "experiments.digits",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumKANRegressor",
+        "kind": 6,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "class QuantumKANRegressor(nn.Module):\n    def __init__(self, num_features, degree=5):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))  # (F, P)\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=1)\n    def forward(self, X):",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "bump",
+        "kind": 2,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "def bump(x): return torch.exp(-10 * (x - 0.2)**2) + torch.exp(-50 * (x + 0.5)**2)\ndef runge(x): return 1 / (1 + 25 * x**2)\ndef exp_sin(x): return torch.exp(-x**2) * torch.sin(5 * x)\ndef noisy_step(x): return torch.heaviside(x, torch.tensor(0.0)) + 0.1 * torch.sin(20 * x)\ndef sigmoid_bumps(x): return torch.sigmoid(8 * (x - 0.5)) + torch.sigmoid(-10 * (x + 0.3)) - 1\ndef sawtooth(x): return 2 * (x - torch.floor(x + 0.5))\ndef default_func(x): return torch.tanh(10 * x + 0.5 + torch.clamp(x**2, min=0) * 10)\nFUNCTION_MAP = {\n    \"bump\": bump,\n    \"runge\": runge,",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "runge",
+        "kind": 2,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "def runge(x): return 1 / (1 + 25 * x**2)\ndef exp_sin(x): return torch.exp(-x**2) * torch.sin(5 * x)\ndef noisy_step(x): return torch.heaviside(x, torch.tensor(0.0)) + 0.1 * torch.sin(20 * x)\ndef sigmoid_bumps(x): return torch.sigmoid(8 * (x - 0.5)) + torch.sigmoid(-10 * (x + 0.3)) - 1\ndef sawtooth(x): return 2 * (x - torch.floor(x + 0.5))\ndef default_func(x): return torch.tanh(10 * x + 0.5 + torch.clamp(x**2, min=0) * 10)\nFUNCTION_MAP = {\n    \"bump\": bump,\n    \"runge\": runge,\n    \"exp_sin\": exp_sin,",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "exp_sin",
+        "kind": 2,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "def exp_sin(x): return torch.exp(-x**2) * torch.sin(5 * x)\ndef noisy_step(x): return torch.heaviside(x, torch.tensor(0.0)) + 0.1 * torch.sin(20 * x)\ndef sigmoid_bumps(x): return torch.sigmoid(8 * (x - 0.5)) + torch.sigmoid(-10 * (x + 0.3)) - 1\ndef sawtooth(x): return 2 * (x - torch.floor(x + 0.5))\ndef default_func(x): return torch.tanh(10 * x + 0.5 + torch.clamp(x**2, min=0) * 10)\nFUNCTION_MAP = {\n    \"bump\": bump,\n    \"runge\": runge,\n    \"exp_sin\": exp_sin,\n    \"noisy_step\": noisy_step,",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "noisy_step",
+        "kind": 2,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "def noisy_step(x): return torch.heaviside(x, torch.tensor(0.0)) + 0.1 * torch.sin(20 * x)\ndef sigmoid_bumps(x): return torch.sigmoid(8 * (x - 0.5)) + torch.sigmoid(-10 * (x + 0.3)) - 1\ndef sawtooth(x): return 2 * (x - torch.floor(x + 0.5))\ndef default_func(x): return torch.tanh(10 * x + 0.5 + torch.clamp(x**2, min=0) * 10)\nFUNCTION_MAP = {\n    \"bump\": bump,\n    \"runge\": runge,\n    \"exp_sin\": exp_sin,\n    \"noisy_step\": noisy_step,\n    \"sigmoid_bumps\": sigmoid_bumps,",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "sigmoid_bumps",
+        "kind": 2,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "def sigmoid_bumps(x): return torch.sigmoid(8 * (x - 0.5)) + torch.sigmoid(-10 * (x + 0.3)) - 1\ndef sawtooth(x): return 2 * (x - torch.floor(x + 0.5))\ndef default_func(x): return torch.tanh(10 * x + 0.5 + torch.clamp(x**2, min=0) * 10)\nFUNCTION_MAP = {\n    \"bump\": bump,\n    \"runge\": runge,\n    \"exp_sin\": exp_sin,\n    \"noisy_step\": noisy_step,\n    \"sigmoid_bumps\": sigmoid_bumps,\n    \"sawtooth\": sawtooth,",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "sawtooth",
+        "kind": 2,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "def sawtooth(x): return 2 * (x - torch.floor(x + 0.5))\ndef default_func(x): return torch.tanh(10 * x + 0.5 + torch.clamp(x**2, min=0) * 10)\nFUNCTION_MAP = {\n    \"bump\": bump,\n    \"runge\": runge,\n    \"exp_sin\": exp_sin,\n    \"noisy_step\": noisy_step,\n    \"sigmoid_bumps\": sigmoid_bumps,\n    \"sawtooth\": sawtooth,\n    \"default\": lambda x: torch.tanh(10 * x + 0.5 + torch.clamp(x**2, min=0) * 10)",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "default_func",
+        "kind": 2,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "def default_func(x): return torch.tanh(10 * x + 0.5 + torch.clamp(x**2, min=0) * 10)\nFUNCTION_MAP = {\n    \"bump\": bump,\n    \"runge\": runge,\n    \"exp_sin\": exp_sin,\n    \"noisy_step\": noisy_step,\n    \"sigmoid_bumps\": sigmoid_bumps,\n    \"sawtooth\": sawtooth,\n    \"default\": lambda x: torch.tanh(10 * x + 0.5 + torch.clamp(x**2, min=0) * 10)\n}",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "FUNCTION_MAP",
+        "kind": 5,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "FUNCTION_MAP = {\n    \"bump\": bump,\n    \"runge\": runge,\n    \"exp_sin\": exp_sin,\n    \"noisy_step\": noisy_step,\n    \"sigmoid_bumps\": sigmoid_bumps,\n    \"sawtooth\": sawtooth,\n    \"default\": lambda x: torch.tanh(10 * x + 0.5 + torch.clamp(x**2, min=0) * 10)\n}\nclass QuantumKANRegressor(nn.Module):",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "model = QuantumKANRegressor()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.01)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\ncriterion = nn.MSELoss()\ntrain_rmse, test_rmse = [], []\nnum_epochs = 1000\nfor name, func in FUNCTION_MAP.items():\n    print(f\"\\nTraining on Function: {name}\")\n    x = torch.linspace(-1, 1, 500).unsqueeze(1)\n    y = func(x)",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "optimizer",
+        "kind": 5,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "optimizer = torch.optim.Adam(model.parameters(), lr=0.01)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\ncriterion = nn.MSELoss()\ntrain_rmse, test_rmse = [], []\nnum_epochs = 1000\nfor name, func in FUNCTION_MAP.items():\n    print(f\"\\nTraining on Function: {name}\")\n    x = torch.linspace(-1, 1, 500).unsqueeze(1)\n    y = func(x)\n    X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\ncriterion = nn.MSELoss()\ntrain_rmse, test_rmse = [], []\nnum_epochs = 1000\nfor name, func in FUNCTION_MAP.items():\n    print(f\"\\nTraining on Function: {name}\")\n    x = torch.linspace(-1, 1, 500).unsqueeze(1)\n    y = func(x)\n    X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)\n    train_losses, test_losses = [], []",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "criterion",
+        "kind": 5,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "criterion = nn.MSELoss()\ntrain_rmse, test_rmse = [], []\nnum_epochs = 1000\nfor name, func in FUNCTION_MAP.items():\n    print(f\"\\nTraining on Function: {name}\")\n    x = torch.linspace(-1, 1, 500).unsqueeze(1)\n    y = func(x)\n    X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)\n    train_losses, test_losses = [], []\n    for epoch in range(num_epochs):",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "num_epochs",
+        "kind": 5,
+        "importPath": "experiments.equations",
+        "description": "experiments.equations",
+        "peekOfCode": "num_epochs = 1000\nfor name, func in FUNCTION_MAP.items():\n    print(f\"\\nTraining on Function: {name}\")\n    x = torch.linspace(-1, 1, 500).unsqueeze(1)\n    y = func(x)\n    X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)\n    train_losses, test_losses = [], []\n    for epoch in range(num_epochs):\n        model.train()\n        optimizer.zero_grad()",
+        "detail": "experiments.equations",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumKANClassifier",
+        "kind": 6,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "class QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features, degree=5, num_classes=2):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))  # (F, P)\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=num_classes)  # e.g., binary => 2\n    def forward(self, X):",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "chebyshev_polynomials",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "chebyshev_polynomials = [\n    [0, 1],\n    [-1, 0, 2],\n    [0, -3, 0, 4],\n    [1, 0, -8, 0, 8]\n]\niris = load_iris()\nX = iris.data\ny = iris.target\nscaler = MinMaxScaler(feature_range=(-1, 1))",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "iris",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "iris = load_iris()\nX = iris.data\ny = iris.target\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features, degree=5, num_classes=2):",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "X = iris.data\ny = iris.target\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features, degree=5, num_classes=2):\n        super().__init__()",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "y = iris.target\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features, degree=5, num_classes=2):\n        super().__init__()\n        self.num_features = num_features",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features, degree=5, num_classes=2):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "X_scaled",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "X_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features, degree=5, num_classes=2):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "X_tensor",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "X_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features, degree=5, num_classes=2):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))  # (F, P)",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "y_tensor",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "y_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features, degree=5, num_classes=2):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))  # (F, P)\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "model = QuantumKANClassifier()\ncriterion = nn.CrossEntropyLoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "criterion",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "criterion = nn.CrossEntropyLoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "optimizer",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "optimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "model = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "X_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "y_train",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "y_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "X_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "y_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)\n    loss = criterion(outputs, y_train)",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "num_epochs",
+        "kind": 5,
+        "importPath": "experiments.iris",
+        "description": "experiments.iris",
+        "peekOfCode": "num_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)\n    loss = criterion(outputs, y_train)\n    loss.backward()\n    optimizer.step()\n    with torch.no_grad():\n        pred_train = outputs.argmax(dim=1)",
+        "detail": "experiments.iris",
+        "documentation": {}
+    },
+    {
+        "label": "QSVTLayer",
+        "kind": 6,
+        "importPath": "experiments.quark_gluon",
+        "description": "experiments.quark_gluon",
+        "peekOfCode": "class QSVTLayer(nn.Module):\n    def __init__(self, chunk_size, coeffs):\n        super().__init__()\n        self.coeffs = coeffs\n        self.theta = nn.Parameter(torch.randn(1))\n        self.dev = qml.device(\"default.qubit\", wires=1)\n        @qml.qnode(self.dev, interface=\"torch\", diff_method=\"backprop\")\n        def circuit(x_scalar, theta):\n            x_scalar = torch.clamp(x_scalar, -1.0, 1.0)\n            qml.RY(x_scalar, wires=0)",
+        "detail": "experiments.quark_gluon",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumSummation",
+        "kind": 6,
+        "importPath": "experiments.quark_gluon",
+        "description": "experiments.quark_gluon",
+        "peekOfCode": "class QuantumSummation(nn.Module):\n    def __init__(self, chunk_size):\n        super().__init__()\n        self.weights = nn.Parameter(torch.rand(chunk_size))\n        self.num_index_qubits = math.ceil(math.log2(chunk_size))\n        self.total_wires = self.num_index_qubits + 2\n        self.dev = qml.device(\"default.qubit\", wires=self.total_wires)\n        @qml.qnode(self.dev, interface=\"torch\", diff_method=\"backprop\")\n        def circuit(phi_vals, wts):\n            index_wires = list(range(self.num_index_qubits))",
+        "detail": "experiments.quark_gluon",
+        "documentation": {}
+    },
+    {
+        "label": "SineKANLayer",
+        "kind": 6,
+        "importPath": "experiments.quark_gluon",
+        "description": "experiments.quark_gluon",
+        "peekOfCode": "class SineKANLayer(nn.Module):\n    def __init__(self, input_dim, output_dim, device='cpu', grid_size=5, is_first=False, add_bias=True, norm_freq=True):\n        super(SineKANLayer, self).__init__()\n        self.grid_size = grid_size\n        self.device = device\n        self.input_dim = input_dim\n        self.output_dim = output_dim\n        self.is_first = is_first\n        self.add_bias = add_bias\n        # Hyperparameters for phase evolution (used in forward_step)",
+        "detail": "experiments.quark_gluon",
+        "documentation": {}
+    },
+    {
+        "label": "SineKAN",
+        "kind": 6,
+        "importPath": "experiments.quark_gluon",
+        "description": "experiments.quark_gluon",
+        "peekOfCode": "class SineKAN(nn.Module):\n    def __init__(self, input_dim, hidden=64, output_dim=2):\n        super().__init__()\n        self.l1 = SineKANLayer(input_dim, hidden, is_first=True)\n        self.l2 = SineKANLayer(hidden, output_dim)\n    def forward(self, x):\n        return self.l2(self.l1(x))\nclass HybridQKAN(nn.Module):\n    def __init__(self, input_dim, cheb_coeffs, chunk_size=8):\n        super().__init__()",
+        "detail": "experiments.quark_gluon",
+        "documentation": {}
+    },
+    {
+        "label": "HybridQKAN",
+        "kind": 6,
+        "importPath": "experiments.quark_gluon",
+        "description": "experiments.quark_gluon",
+        "peekOfCode": "class HybridQKAN(nn.Module):\n    def __init__(self, input_dim, cheb_coeffs, chunk_size=8):\n        super().__init__()\n        self.chunk_size = chunk_size\n        self.num_chunks = input_dim // chunk_size\n        self.qsvt_layers = nn.ModuleList([\n            QSVTLayer(chunk_size, coeffs=cheb_coeffs[i % len(cheb_coeffs)])\n            for i in range(self.num_chunks)\n        ])\n        self.lcu_weights = nn.Parameter(torch.randn(self.num_chunks, chunk_size))",
+        "detail": "experiments.quark_gluon",
+        "documentation": {}
+    },
+    {
+        "label": "load_and_preprocess",
+        "kind": 2,
+        "importPath": "experiments.quark_gluon",
+        "description": "experiments.quark_gluon",
+        "peekOfCode": "def load_and_preprocess(file_path, Nsamples=1000, crop_size=8):\n    with h5py.File(file_path, \"r\") as f:\n        X_jets = f[\"X_jets\"][:Nsamples]\n        y = f[\"y\"][:Nsamples]\n    def crop_center(img, cx, cy):\n        x, y = img.shape[1:3]\n        sx, sy = x // 2 - cx // 2, y // 2 - cy // 2\n        return img[:, sx:sx + cx, sy:sy + cy, :]\n    cropped = crop_center(X_jets, crop_size, crop_size)\n    ch0 = cropped[..., 0]",
+        "detail": "experiments.quark_gluon",
+        "documentation": {}
+    },
+    {
+        "label": "make_lcu_layer",
+        "kind": 2,
+        "importPath": "experiments.quark_gluon",
+        "description": "experiments.quark_gluon",
+        "peekOfCode": "def make_lcu_layer(chunk_size):\n    dev = qml.device(\"default.qubit\", wires=3)\n    @qml.qnode(dev, interface=\"torch\", diff_method=\"backprop\")\n    def lcu_circuit(vals, weights):\n        qml.RY(vals[0], wires=0)\n        qml.RY(weights[0], wires=1)\n        qml.CNOT(wires=[0, 2])\n        angle = torch.clamp(vals[0] * weights[0], -math.pi, math.pi)\n        qml.ctrl(qml.RZ, control=0)(angle, wires=2)\n        return qml.expval(qml.PauliZ(2))",
+        "detail": "experiments.quark_gluon",
+        "documentation": {}
+    },
+    {
+        "label": "forward_step",
+        "kind": 2,
+        "importPath": "experiments.quark_gluon",
+        "description": "experiments.quark_gluon",
+        "peekOfCode": "def forward_step(i_n, grid_size, A, K, C):\n    ratio = A * grid_size**(-K) + C\n    return ratio * i_n\nclass SineKANLayer(nn.Module):\n    def __init__(self, input_dim, output_dim, device='cpu', grid_size=5, is_first=False, add_bias=True, norm_freq=True):\n        super(SineKANLayer, self).__init__()\n        self.grid_size = grid_size\n        self.device = device\n        self.input_dim = input_dim\n        self.output_dim = output_dim",
+        "detail": "experiments.quark_gluon",
+        "documentation": {}
+    },
+    {
+        "label": "train_qkan_model",
+        "kind": 2,
+        "importPath": "experiments.quark_gluon",
+        "description": "experiments.quark_gluon",
+        "peekOfCode": "def train_qkan_model(filepath):\n    X_train, X_test, y_train, y_test = load_and_preprocess(filepath, Nsamples=1000, crop_size=8)\n    input_dim = X_train.shape[1]\n    cheb_coeffs = [[0, 1], [-1, 0, 2], [0, -3, 0, 4]]\n    model = HybridQKAN(input_dim=input_dim, cheb_coeffs=cheb_coeffs, chunk_size=8)\n    device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n    model.to(device)\n    optimizer = optim.Adam(model.parameters(), lr=1e-3)\n    criterion = nn.CrossEntropyLoss()\n    for epoch in range(50):",
+        "detail": "experiments.quark_gluon",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumKANClassifier",
+        "kind": 6,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "class QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=2, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=num_classes)\n    def forward(self, X):\n        B = X.size(0)\n        features = []",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "df = pd.read_csv(\"C://Users//riakh//Downloads//archive//Social_Network_Ads.csv\")\nX = df[['Age', 'EstimatedSalary']].values\ny = df['Purchased'].values\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=2, degree=3, num_classes=2):",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "X = df[['Age', 'EstimatedSalary']].values\ny = df['Purchased'].values\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=2, degree=3, num_classes=2):\n        super().__init__()",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "y = df['Purchased'].values\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=2, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=2, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "X_scaled",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "X_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=2, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "X_tensor",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "X_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=2, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=num_classes)",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "y_tensor",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "y_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=2, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=num_classes)\n    def forward(self, X):",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "model = QuantumKANClassifier()\ncriterion = nn.CrossEntropyLoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "criterion",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "criterion = nn.CrossEntropyLoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "optimizer",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "optimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "model = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "X_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "y_train",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "y_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "X_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "y_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)\n    loss = criterion(outputs, y_train)",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "num_epochs",
+        "kind": 5,
+        "importPath": "experiments.social_networks_ad",
+        "description": "experiments.social_networks_ad",
+        "peekOfCode": "num_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)\n    loss = criterion(outputs, y_train)\n    loss.backward()\n    optimizer.step()\n    with torch.no_grad():\n        pred_train = outputs.argmax(dim=1)",
+        "detail": "experiments.social_networks_ad",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumKANClassifier",
+        "kind": 6,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "class QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=4, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=num_classes)\n    def forward(self, X):\n        B = X.size(0)\n        features = []",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "df = pd.read_csv(\"C://Users//riakh//Downloads//archive//Titanic-Dataset.csv\")\ndf = df[['Pclass', 'Sex', 'Age', 'Fare', 'Survived']].dropna()\ndf['Sex'] = df['Sex'].map({'male': 0, 'female': 1})\nX = df[['Pclass', 'Sex', 'Age', 'Fare']].values\ny = df['Survived'].values\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "df = df[['Pclass', 'Sex', 'Age', 'Fare', 'Survived']].dropna()\ndf['Sex'] = df['Sex'].map({'male': 0, 'female': 1})\nX = df[['Pclass', 'Sex', 'Age', 'Fare']].values\ny = df['Survived'].values\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "df['Sex']",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})\nX = df[['Pclass', 'Sex', 'Age', 'Fare']].values\ny = df['Survived'].values\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=4, degree=3, num_classes=2):",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "X = df[['Pclass', 'Sex', 'Age', 'Fare']].values\ny = df['Survived'].values\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=4, degree=3, num_classes=2):\n        super().__init__()",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "y = df['Survived'].values\nscaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=4, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "scaler = MinMaxScaler(feature_range=(-1, 1))\nX_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=4, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "X_scaled",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "X_scaled = scaler.fit_transform(X)\nX_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=4, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "X_tensor",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "X_tensor = torch.tensor(X_scaled, dtype=torch.float32)\ny_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=4, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=num_classes)",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "y_tensor",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "y_tensor = torch.tensor(y, dtype=torch.long)\nX_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)\nclass QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features=4, degree=3, num_classes=2):\n        super().__init__()\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=num_classes)\n    def forward(self, X):",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "model = QuantumKANClassifier(num_features=4, degree=3, num_classes=2)\ncriterion = nn.CrossEntropyLoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "criterion",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "criterion = nn.CrossEntropyLoss()\noptimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "optimizer",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "optimizer = torch.optim.Adam(model.parameters(), lr=0.5)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "model = model.to(device)\nX_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "X_train = X_train.float().to(device)\ny_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "y_train",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "y_train = y_train.long().to(device)\nX_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "X_test = X_test.float().to(device)\ny_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "y_test = y_test.long().to(device)\nprint(\"X_train dtype:\", X_train.dtype)\nprint(\"weights dtype:\", model.kan_layer.weights.dtype)\nprint(\"knots dtype:\", model.kan_layer.knots.dtype)\nnum_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)\n    loss = criterion(outputs, y_train)",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "num_epochs",
+        "kind": 5,
+        "importPath": "experiments.titanic",
+        "description": "experiments.titanic",
+        "peekOfCode": "num_epochs = 1000\nfor epoch in range(num_epochs):\n    model.train()\n    optimizer.zero_grad()\n    outputs = model(X_train)\n    loss = criterion(outputs, y_train)\n    loss.backward()\n    optimizer.step()\n    with torch.no_grad():\n        pred_train = outputs.argmax(dim=1)",
+        "detail": "experiments.titanic",
+        "documentation": {}
+    },
+    {
+        "label": "MLPClassifier",
+        "kind": 6,
+        "importPath": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "peekOfCode": "class MLPClassifier(nn.Module):\n    def __init__(self, input_dim, hidden_dim=128, output_dim=2):\n        super().__init__()\n        self.model = nn.Sequential(\n            nn.Linear(input_dim, hidden_dim),\n            nn.ReLU(),\n            nn.Linear(hidden_dim, hidden_dim),\n            nn.ReLU(),\n            nn.Linear(hidden_dim, output_dim)\n        )",
+        "detail": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "load_and_preprocess",
+        "kind": 2,
+        "importPath": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "peekOfCode": "def load_and_preprocess(file_path, Nsamples=1000, crop_size=12):\n    with h5py.File(file_path, \"r\") as f:\n        X_jets = f[\"X_jets\"][:Nsamples]\n        y = f[\"y\"][:Nsamples]\n    def crop_center(img, cx, cy):\n        x, y = img.shape[1:3]\n        sx, sy = x // 2 - cx // 2, y // 2 - cy // 2\n        return img[:, sx:sx+cx, sy:sy+cy, :]\n    cropped = crop_center(X_jets, crop_size, crop_size)\n    ch0 = cropped[..., 1]",
+        "detail": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "train_mlp_model",
+        "kind": 2,
+        "importPath": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "peekOfCode": "def train_mlp_model(file_path, epochs=50, batch_size=32, lr=0.001):\n    X_train, X_test, y_train, y_test = load_and_preprocess(file_path, Nsamples=1000, crop_size=12)\n    train_dataset = torch.utils.data.TensorDataset(X_train, y_train)\n    test_dataset = torch.utils.data.TensorDataset(X_test, y_test)\n    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True)\n    test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size)\n    input_dim = X_train.shape[1]\n    model = MLPClassifier(input_dim=input_dim, hidden_dim=128, output_dim=2)\n    device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n    model.to(device)",
+        "detail": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "SEED",
+        "kind": 5,
+        "importPath": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "peekOfCode": "SEED = 10\ntorch.manual_seed(SEED)\nnp.random.seed(SEED)\ndef load_and_preprocess(file_path, Nsamples=1000, crop_size=12):\n    with h5py.File(file_path, \"r\") as f:\n        X_jets = f[\"X_jets\"][:Nsamples]\n        y = f[\"y\"][:Nsamples]\n    def crop_center(img, cx, cy):\n        x, y = img.shape[1:3]\n        sx, sy = x // 2 - cx // 2, y // 2 - cy // 2",
+        "detail": "models.ClassicalModelsforBenchmarking.MLP_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "SineKANLayer",
+        "kind": 6,
+        "importPath": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "peekOfCode": "class SineKANLayer(nn.Module):\n    def __init__(self, input_dim, output_dim, device='cpu', grid_size=5, is_first=False, add_bias=True, norm_freq=True):\n        super().__init__()\n        self.grid_size = grid_size\n        self.device = device\n        self.input_dim = input_dim\n        self.output_dim = output_dim\n        self.is_first = is_first\n        self.add_bias = add_bias\n        self.A, self.K, self.C = 0.9724, 0.9884, 0.9994",
+        "detail": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "SineKAN",
+        "kind": 6,
+        "importPath": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "peekOfCode": "class SineKAN(nn.Module):\n    def __init__(self, layers_hidden: List[int], grid_size=8, device='cpu'):\n        super().__init__()\n        self.layers = nn.ModuleList([\n            SineKANLayer(in_dim, out_dim, device, grid_size=grid_size, is_first=(i == 0))\n            for i, (in_dim, out_dim) in enumerate(zip(layers_hidden[:-1], layers_hidden[1:]))\n        ])\n    def forward(self, x):\n        for layer in self.layers:\n            x = layer(x)",
+        "detail": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "load_and_preprocess",
+        "kind": 2,
+        "importPath": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "peekOfCode": "def load_and_preprocess(file_path, Nsamples=1000, crop_size=8):\n    with h5py.File(file_path, \"r\") as f:\n        X_jets = f[\"X_jets\"][:Nsamples]\n        y = f[\"y\"][:Nsamples]\n    def crop_center(img, cropx, cropy):\n        x, y = img.shape[1:3]\n        startx = x // 2 - (cropx // 2)\n        starty = y // 2 - (cropy // 2)\n        return img[:, startx:startx + cropx, starty:starty + cropy, :]\n    cropped = crop_center(X_jets, crop_size, crop_size)",
+        "detail": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "forward_step",
+        "kind": 2,
+        "importPath": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "peekOfCode": "def forward_step(i_n, grid_size, A, K, C):\n    ratio = A * grid_size**(-K) + C\n    return ratio * i_n\nclass SineKANLayer(nn.Module):\n    def __init__(self, input_dim, output_dim, device='cpu', grid_size=5, is_first=False, add_bias=True, norm_freq=True):\n        super().__init__()\n        self.grid_size = grid_size\n        self.device = device\n        self.input_dim = input_dim\n        self.output_dim = output_dim",
+        "detail": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "train_sinekan_model",
+        "kind": 2,
+        "importPath": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "peekOfCode": "def train_sinekan_model(X_train, X_test, y_train, y_test, input_dim=128, output_dim=2):\n    device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n    # model = SineKAN([input_dim, 64, output_dim], grid_size=8, device=device).to(device)\n    model = SineKAN([input_dim, 64, 32, output_dim], grid_size=8, device=device).to(device)\n    optimizer = optim.AdamW(model.parameters(), lr=1e-2)\n    scheduler = optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.9)\n    criterion = nn.CrossEntropyLoss()\n    best_acc = 0.0\n    best_state = None\n    for epoch in range(300):",
+        "detail": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "SEED",
+        "kind": 5,
+        "importPath": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "peekOfCode": "SEED = 10\ntorch.manual_seed(SEED)\nnp.random.seed(SEED)\ncrop_size = 8\nNsamples = 1000\nfile_path = \"C:\\\\Users\\\\riakh\\\\Downloads\\\\quark-gluon_train-set_n793900-001.hdf5\"\ndef load_and_preprocess(file_path, Nsamples=1000, crop_size=8):\n    with h5py.File(file_path, \"r\") as f:\n        X_jets = f[\"X_jets\"][:Nsamples]\n        y = f[\"y\"][:Nsamples]",
+        "detail": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "crop_size",
+        "kind": 5,
+        "importPath": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "peekOfCode": "crop_size = 8\nNsamples = 1000\nfile_path = \"C:\\\\Users\\\\riakh\\\\Downloads\\\\quark-gluon_train-set_n793900-001.hdf5\"\ndef load_and_preprocess(file_path, Nsamples=1000, crop_size=8):\n    with h5py.File(file_path, \"r\") as f:\n        X_jets = f[\"X_jets\"][:Nsamples]\n        y = f[\"y\"][:Nsamples]\n    def crop_center(img, cropx, cropy):\n        x, y = img.shape[1:3]\n        startx = x // 2 - (cropx // 2)",
+        "detail": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "Nsamples",
+        "kind": 5,
+        "importPath": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "peekOfCode": "Nsamples = 1000\nfile_path = \"C:\\\\Users\\\\riakh\\\\Downloads\\\\quark-gluon_train-set_n793900-001.hdf5\"\ndef load_and_preprocess(file_path, Nsamples=1000, crop_size=8):\n    with h5py.File(file_path, \"r\") as f:\n        X_jets = f[\"X_jets\"][:Nsamples]\n        y = f[\"y\"][:Nsamples]\n    def crop_center(img, cropx, cropy):\n        x, y = img.shape[1:3]\n        startx = x // 2 - (cropx // 2)\n        starty = y // 2 - (cropy // 2)",
+        "detail": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "description": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "peekOfCode": "file_path = \"C:\\\\Users\\\\riakh\\\\Downloads\\\\quark-gluon_train-set_n793900-001.hdf5\"\ndef load_and_preprocess(file_path, Nsamples=1000, crop_size=8):\n    with h5py.File(file_path, \"r\") as f:\n        X_jets = f[\"X_jets\"][:Nsamples]\n        y = f[\"y\"][:Nsamples]\n    def crop_center(img, cropx, cropy):\n        x, y = img.shape[1:3]\n        startx = x // 2 - (cropx // 2)\n        starty = y // 2 - (cropy // 2)\n        return img[:, startx:startx + cropx, starty:starty + cropy, :]",
+        "detail": "models.ClassicalModelsforBenchmarking.SineKAN_quarkgluon",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumKANClassifier",
+        "kind": 6,
+        "importPath": "models.HybridQKAN_model_components.hybridqkanclassifier",
+        "description": "models.HybridQKAN_model_components.hybridqkanclassifier",
+        "peekOfCode": "class QuantumKANClassifier(nn.Module):\n    def __init__(self, num_features, degree=3, num_classes=2):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))  # (F, P)\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=num_classes) \n    def forward(self, X):",
+        "detail": "models.HybridQKAN_model_components.hybridqkanclassifier",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumKANRegressor",
+        "kind": 6,
+        "importPath": "models.HybridQKAN_model_components.hybridqkanregressor",
+        "description": "models.HybridQKAN_model_components.hybridqkanregressor",
+        "peekOfCode": "class QuantumKANRegressor(nn.Module):\n    def __init__(self, num_features, degree=3):\n        super().__init__()\n        self.num_features = num_features\n        self.degree = degree\n        self.qsvt = QSVT(wires=1, degree=degree, depth=2)\n        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))  # (F, P)\n        self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])\n        self.kan = KANLayer(in_features=num_features, out_features=1)\n    def forward(self, X):",
+        "detail": "models.HybridQKAN_model_components.hybridqkanregressor",
+        "documentation": {}
+    },
+    {
+        "label": "quantum_lcu_block",
+        "kind": 2,
+        "importPath": "models.HybridQKAN_model_components.LCU",
+        "description": "models.HybridQKAN_model_components.LCU",
+        "peekOfCode": "def quantum_lcu_block(qsvt_vals, weight_vals):\n    \"\"\"\n    qsvt_vals: tensor of shape (P,)\n    weight_vals: tensor of shape (P,)\n    Output: tensor scalar (Z expectation after quantum weighting)\n    \"\"\"\n    P = len(qsvt_vals)\n    n_ctrl = math.ceil(math.log2(P))\n    wires = list(range(n_ctrl + 1))  # control + 1 target\n    dev = qml.device(\"default.qubit\", wires=len(wires))",
+        "detail": "models.HybridQKAN_model_components.LCU",
+        "documentation": {}
+    },
+    {
+        "label": "QSVT",
+        "kind": 6,
+        "importPath": "models.HybridQKAN_model_components.qsvt_chebyshevpoly",
+        "description": "models.HybridQKAN_model_components.qsvt_chebyshevpoly",
+        "peekOfCode": "class QSVT(nn.Module):\n    def __init__(self, degree=5, wires=4):\n        super().__init__()\n        self.degree = degree\n        self.wires = wires\n        self.target_polys = target_polys\n        self.dev = qml.device(\"default.qubit\", wires=wires)\n        @qml.qnode(self.dev, interface=\"torch\", diff_method=\"backprop\")\n        def circuit(x, poly):\n            for i in range(wires):",
+        "detail": "models.HybridQKAN_model_components.qsvt_chebyshevpoly",
+        "documentation": {}
+    },
+    {
+        "label": "target_polys",
+        "kind": 5,
+        "importPath": "models.HybridQKAN_model_components.qsvt_chebyshevpoly",
+        "description": "models.HybridQKAN_model_components.qsvt_chebyshevpoly",
+        "peekOfCode": "target_polys = [\n    [0, 1],\n    [-1, 0, 2],\n    [0, -3, 0, 4],\n    [1, 0, -8, 0, 8]\n]\nclass QSVT(nn.Module):\n    def __init__(self, degree=5, wires=4):\n        super().__init__()\n        self.degree = degree",
+        "detail": "models.HybridQKAN_model_components.qsvt_chebyshevpoly",
+        "documentation": {}
+    },
+    {
+        "label": "QSVT",
+        "kind": 6,
+        "importPath": "models.HybridQKAN_model_components.qsvt_sinepoly",
+        "description": "models.HybridQKAN_model_components.qsvt_sinepoly",
+        "peekOfCode": "class QSVT(nn.Module):\n    def __init__(self, wires=4, degree=5):\n        super().__init__()\n        self.wires = wires\n        self.dev = qml.device(\"default.qubit\", wires=wires)\n        xs = np.linspace(-1, 1, 200)\n        fx = sum(np.sin(k * np.pi * xs) for k in [1, 3, 5])\n        poly = np.polyfit(xs, fx, deg=degree)\n        poly /= np.max(np.abs(np.polyval(poly, xs))) + 1e-6\n        odd_poly = [c if i % 2 == 1 else 0 for i, c in enumerate(poly[::-1])]",
+        "detail": "models.HybridQKAN_model_components.qsvt_sinepoly",
+        "documentation": {}
+    },
+    {
+        "label": "QuantumSumBlock",
+        "kind": 6,
+        "importPath": "models.HybridQKAN_model_components.quantum_summation",
+        "description": "models.HybridQKAN_model_components.quantum_summation",
+        "peekOfCode": "class QuantumSumBlock(nn.Module):\n    def __init__(self, num_polynomials):\n        \"\"\"\n        Quantum summation over N polynomial outputs using Hadamard test.\n        Supports arbitrary N (must be <= 2^num_index_qubits).\n        Args:\n            phi_vals (tensor): shape (N,), tensor of real-valued polynomial outputs.\n        Returns:\n            torch.Tensor: scalar value (quantum sum approximation via Hadamard test)\n        \"\"\"",
+        "detail": "models.HybridQKAN_model_components.quantum_summation",
+        "documentation": {}
+    },
+    {
+        "label": "KANLayer",
+        "kind": 6,
+        "importPath": "models.HybridQKAN_model_components.SplineKANlayer",
+        "description": "models.HybridQKAN_model_components.SplineKANlayer",
+        "peekOfCode": "class KANLayer(nn.Module):\n    def __init__(self, in_features, out_features, num_basis=30, order=3):\n        super().__init__()\n        self.in_features = in_features\n        self.out_features = out_features\n        self.knots = nn.Parameter(torch.tensor([np.linspace(-2, 2, num_basis+order+1) for _ in range(in_features)], dtype=torch.float32))\n        self.weights = nn.Parameter(torch.randn(out_features, in_features, num_basis))\n        self.bias = nn.Parameter(torch.randn(out_features))\n    def forward(self, x):\n        x = x.detach()",
+        "detail": "models.HybridQKAN_model_components.SplineKANlayer",
+        "documentation": {}
+    },
+    {
+        "label": "X_flat",
+        "kind": 5,
+        "importPath": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "description": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "peekOfCode": "X_flat = X.reshape(X.shape[0], -1)  \nquark_flat = X_flat[y == 0]\ngluon_flat = X_flat[y == 1]\nt_vals, p_vals = ttest_ind(quark_flat, gluon_flat, axis=0, equal_var=False)\ntop_indices = np.argsort(p_vals)[:192]  # top 8x8x3 = 192 pixel indices\nX_selected = X_flat[:, top_indices]  # shape: (1000, 192)\nfrom sklearn.model_selection import train_test_split\nimport torch\nX_train, X_test, y_train, y_test = train_test_split(\n    X_selected, y, test_size=0.2, random_state=42, stratify=y",
+        "detail": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "quark_flat",
+        "kind": 5,
+        "importPath": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "description": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "peekOfCode": "quark_flat = X_flat[y == 0]\ngluon_flat = X_flat[y == 1]\nt_vals, p_vals = ttest_ind(quark_flat, gluon_flat, axis=0, equal_var=False)\ntop_indices = np.argsort(p_vals)[:192]  # top 8x8x3 = 192 pixel indices\nX_selected = X_flat[:, top_indices]  # shape: (1000, 192)\nfrom sklearn.model_selection import train_test_split\nimport torch\nX_train, X_test, y_train, y_test = train_test_split(\n    X_selected, y, test_size=0.2, random_state=42, stratify=y\n)",
+        "detail": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "gluon_flat",
+        "kind": 5,
+        "importPath": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "description": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "peekOfCode": "gluon_flat = X_flat[y == 1]\nt_vals, p_vals = ttest_ind(quark_flat, gluon_flat, axis=0, equal_var=False)\ntop_indices = np.argsort(p_vals)[:192]  # top 8x8x3 = 192 pixel indices\nX_selected = X_flat[:, top_indices]  # shape: (1000, 192)\nfrom sklearn.model_selection import train_test_split\nimport torch\nX_train, X_test, y_train, y_test = train_test_split(\n    X_selected, y, test_size=0.2, random_state=42, stratify=y\n)\nX_train = torch.tensor(X_train, dtype=torch.float32)",
+        "detail": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "top_indices",
+        "kind": 5,
+        "importPath": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "description": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "peekOfCode": "top_indices = np.argsort(p_vals)[:192]  # top 8x8x3 = 192 pixel indices\nX_selected = X_flat[:, top_indices]  # shape: (1000, 192)\nfrom sklearn.model_selection import train_test_split\nimport torch\nX_train, X_test, y_train, y_test = train_test_split(\n    X_selected, y, test_size=0.2, random_state=42, stratify=y\n)\nX_train = torch.tensor(X_train, dtype=torch.float32)\nX_test = torch.tensor(X_test, dtype=torch.float32)\ny_train = torch.tensor(y_train, dtype=torch.long)",
+        "detail": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "X_selected",
+        "kind": 5,
+        "importPath": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "description": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "peekOfCode": "X_selected = X_flat[:, top_indices]  # shape: (1000, 192)\nfrom sklearn.model_selection import train_test_split\nimport torch\nX_train, X_test, y_train, y_test = train_test_split(\n    X_selected, y, test_size=0.2, random_state=42, stratify=y\n)\nX_train = torch.tensor(X_train, dtype=torch.float32)\nX_test = torch.tensor(X_test, dtype=torch.float32)\ny_train = torch.tensor(y_train, dtype=torch.long)\ny_test = torch.tensor(y_test, dtype=torch.long)",
+        "detail": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "description": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "peekOfCode": "X_train = torch.tensor(X_train, dtype=torch.float32)\nX_test = torch.tensor(X_test, dtype=torch.float32)\ny_train = torch.tensor(y_train, dtype=torch.long)\ny_test = torch.tensor(y_test, dtype=torch.long)",
+        "detail": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "description": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "peekOfCode": "X_test = torch.tensor(X_test, dtype=torch.float32)\ny_train = torch.tensor(y_train, dtype=torch.long)\ny_test = torch.tensor(y_test, dtype=torch.long)",
+        "detail": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "y_train",
+        "kind": 5,
+        "importPath": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "description": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "peekOfCode": "y_train = torch.tensor(y_train, dtype=torch.long)\ny_test = torch.tensor(y_test, dtype=torch.long)",
+        "detail": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "description": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "peekOfCode": "y_test = torch.tensor(y_test, dtype=torch.long)",
+        "detail": "models.HybridQKAN_model_components.t-testbasedpreprocessing",
+        "documentation": {}
+    }
+]
