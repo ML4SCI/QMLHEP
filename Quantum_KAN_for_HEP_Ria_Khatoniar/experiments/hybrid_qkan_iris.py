@@ -1,46 +1,57 @@
 import torch
 import torch.nn as nn
 from sklearn.model_selection import train_test_split
-from sklearn.datasets import load_digits
-from sklearn.preprocessing import MinMaxScaler
+import matplotlib.pyplot as plt
+from models.HybridQKAN_model_components import QSVT, quantum_lcu_block, QuantumSumBlock, KANLayer
+from sklearn.datasets import load_iris
 import numpy as np
-from HybridQKAN_model_components import QSVT, quantum_lcu_block, QuantumSumBlock, KANLayer
+from sklearn.preprocessing import MinMaxScaler
 
-digits = load_digits()
-X = digits.data[:1000]   # 1000 samples
-y = digits.target[:1000]
 
+chebyshev_polynomials = [
+    [0, 1],
+    [-1, 0, 2],
+    [0, -3, 0, 4],
+    [1, 0, -8, 0, 8]
+]
+
+iris = load_iris()
+X = iris.data
+y = iris.target
 scaler = MinMaxScaler(feature_range=(-1, 1))
 X_scaled = scaler.fit_transform(X)
-
 X_tensor = torch.tensor(X_scaled, dtype=torch.float32)
 y_tensor = torch.tensor(y, dtype=torch.long)
-
-X_train, X_test, y_train, y_test = train_test_split(
-    X_tensor, y_tensor, test_size=0.2, random_state=42
-)
+X_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)
 
 class QuantumKANClassifier(nn.Module):
-    def __init__(self, num_features=64, degree=4, num_classes=10):
+    def __init__(self, num_features, degree=5, num_classes=2):
         super().__init__()
         self.num_features = num_features
         self.degree = degree
 
         self.qsvt = QSVT(wires=1, degree=degree, depth=2)
-        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))
+        self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))  # (F, P)
         self.sum_blocks = nn.ModuleList([QuantumSumBlock(degree) for _ in range(num_features)])
-        self.kan = KANLayer(in_features=num_features, out_features=num_classes)
+        self.kan = KANLayer(in_features=num_features, out_features=num_classes)  # e.g., binary => 2
 
     def forward(self, X):
+        """
+        Input: X of shape (B, F)
+        Output: logits of shape (B, num_classes)
+        """
         B = X.size(0)
         all_features = []
+
         for i in range(B):
-            xi = X[i]
-            qsvt_vecs = [self.qsvt(xi[f]) for f in range(self.num_features)]  # shape (P,)
+            xi = X[i]  # shape: (F,)
+            qsvt_vecs = [self.qsvt(xi[f]) for f in range(self.num_features)]  # each: (P,)
             lcu_vals = [quantum_lcu_block(qsvt_vecs[f], self.lcu_weights[f]) for f in range(self.num_features)]
-            summed = [self.sum_blocks[f](lcu_vals[f].unsqueeze(0)) for f in range(self.num_features)]
-            all_features.append(torch.stack(summed))
-        return self.kan(torch.stack(all_features))  # shape: (B, 10)
+            summed = [self.sum_blocks[f](lcu_vals[f]) for f in range(self.num_features)]
+            all_features.append(torch.stack(summed))  # shape: (F,)
+
+        features = torch.stack(all_features)  # shape: (B, F)
+        return self.kan(features)  # shape: (B, num_classes)
 
 model = QuantumKANClassifier()
 criterion = nn.CrossEntropyLoss()
@@ -77,4 +88,3 @@ with torch.no_grad():
     pred_test = test_outputs.argmax(dim=1)
     acc_test = (pred_test == y_test).float().mean()
     print(f"\nTest Accuracy: {acc_test.item():.4f}")
-
