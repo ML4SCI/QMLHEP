@@ -3,15 +3,11 @@ import torch
 import torch.nn as nn
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
-from HybridQKAN_model_components import QSVT, quantum_lcu_block, QuantumSumBlock, KANLayer
+from models.HybridQKAN_model_components import QSVT, quantum_lcu_block, QuantumSumBlock, KANLayer
 
-df = pd.read_csv("C://Users//riakh//Downloads//archive//Titanic-Dataset.csv")
-
-df = df[['Pclass', 'Sex', 'Age', 'Fare', 'Survived']].dropna()
-df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
-
-X = df[['Pclass', 'Sex', 'Age', 'Fare']].values
-y = df['Survived'].values
+df = pd.read_csv("C://Users//riakh//Downloads//archive//Social_Network_Ads.csv")
+X = df[['Age', 'EstimatedSalary']].values
+y = df['Purchased'].values
 
 scaler = MinMaxScaler(feature_range=(-1, 1))
 X_scaled = scaler.fit_transform(X)
@@ -21,7 +17,7 @@ y_tensor = torch.tensor(y, dtype=torch.long)
 X_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)
 
 class QuantumKANClassifier(nn.Module):
-    def __init__(self, num_features=4, degree=3, num_classes=2):
+    def __init__(self, num_features=2, degree=3, num_classes=2):
         super().__init__()
         self.qsvt = QSVT(wires=1, degree=degree, depth=2)
         self.lcu_weights = nn.Parameter(torch.rand(num_features, degree))
@@ -39,7 +35,7 @@ class QuantumKANClassifier(nn.Module):
             features.append(torch.stack(summed))
         return self.kan(torch.stack(features))
 
-model = QuantumKANClassifier(num_features=4, degree=3, num_classes=2)
+model = QuantumKANClassifier()
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.5)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
