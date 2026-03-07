@@ -46,16 +46,14 @@ The repository contains [TensorFlow Quantum](https://www.tensorflow.org/quantum)
 ### Installation
 
 Tested on Ubuntu 22.04.1 LTS
-```
 git clone https://github.com/Gopal-Dahale/qml-hep-lhc.git
 cd qml-hep-lhc
 python -m venv qenv
 source qenv/bin/activate
 export PYTHONPATH=.
 pip install -r requirements.txt
-```
 
-### Documentation Tutorials and Developement
+### Documentation Tutorials and Development
 - Documentation: Work in progress.
 - Tutorials: [Link](https://github.com/Gopal-Dahale/qml-hep-lhc/tree/main/notebooks/Tutorials). Work in progress.
 - Development notebooks: [Link](https://github.com/Gopal-Dahale/qml-hep-lhc/tree/main/notebooks/Dev). These notebooks were used during the period of GSoC.
@@ -81,7 +79,7 @@ Single channel images of handwritten digits of size 28 x 28 pixels.
   <p>Mean image of Electron and Photon. Mean of energy channel (left). Mean of time channel (right).</p>
 </p>
   
-The dataset contains images electrons and photons captured by the ECAL detector.
+The dataset contains images of electrons and photons captured by the ECAL detector.
 - Each pixel corresponds to a detector cell.
 - The intensity of the pixel corresponds to how much energy is measured in that cell.
 - 498k samples, equally distributed between the two classes.
@@ -102,7 +100,7 @@ The dataset contains images electrons and photons captured by the ECAL detector.
 The dataset contains images of simulated quark and gluon jets. The image has three channels, the first channel is the reconstructed tracks of the jet, the second channel is the images captured by the electromagnetic calorimeter (ECAL) detector, and the third channel is the images captured by the hadronic calorimeter (HCAL) detector.
   
 - A total of 700k samples, equally distributed between the two classes.
-- The images has size of 125 x 125 pixels (for every channel).
+- The images have a size of 125 x 125 pixels (for every channel).
 - Since the original size of 125 x 125 pixels is too large for quantum computing simulation, we cropped the images into certain size. For now, we limit the current size to 40 x 40 pixels.
 - In this study, we focus on the ECAL channel.
 
@@ -129,14 +127,12 @@ The results of all experiments can be obtained from [wandb](https://wandb.ai/gop
 - Measuring all qubits in Pauli Z basis.
 
 ##### Architecture
-```
 y = x
 x = qconv(x)
 x += y
 x = relu(x)
-x = Linear(x) # 8 classical neurons 
+x = Linear(x) # 8 classical neurons
 x = Linear(x) # 2 classical neurons
-```
 
 #### NQubitPQCSparse
 
@@ -232,14 +228,12 @@ x = Linear(x) # 2 classical neurons
 - Measuring all qubits in Pauli Z basis.
 
 ##### Architecture
-```
 y = x
 x = qconv(x)
 x += y
 x = relu(x)
-x = Linear(x) # 8 classical neurons 
+x = Linear(x) # 8 classical neurons
 x = Linear(x) # 2 classical neurons
-```
 
 #### NQubitPQCSparse
 
