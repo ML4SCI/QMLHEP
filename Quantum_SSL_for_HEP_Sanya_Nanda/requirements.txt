@@ -1,0 +1,8 @@
+pennylane
+tensorflow==2.16.0
+pytorch
+qutip
+numpy
+matplotlib
+sklearn
+opencv-python

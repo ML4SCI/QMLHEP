@@ -1,0 +1,23 @@
+{
+    "id": "09",
+    "qubits": 7,
+    "auxiliar qubits": 2,
+    "circuit depth": 10,
+    "generators": 2,
+    "rotations": [
+        "Y"
+    ],
+    "lr gen": 0.004,
+    "lr disc": 0.1,
+    "batch size": 1,
+    "resolution": "8x8",
+    "optimizer": "SGD",
+    "samples": 512,
+    "epochs": 30,
+    "y": 0.3,
+    "FID": "2.96e-04",
+    "RMSE": "6.27e-03",
+    "disc loss": "1.40e+00",
+    "gen loss": "1.14e+00",
+    "notes": "this test seems work better than 05, 06, 07"
+}

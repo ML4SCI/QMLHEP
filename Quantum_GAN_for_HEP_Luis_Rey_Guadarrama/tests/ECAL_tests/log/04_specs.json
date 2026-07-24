@@ -1,0 +1,23 @@
+{
+    "id": "04",
+    "qubits": 7,
+    "auxiliar qubits": 2,
+    "circuit depth": 10,
+    "generators": 2,
+    "rotations": [
+        "Y"
+    ],
+    "lr gen": 0.04,
+    "lr disc": 0.1,
+    "batch size": 1,
+    "resolution": "8x8",
+    "optimizer": "SGD",
+    "samples": 512,
+    "epochs": 20,
+    "y": 0.3,
+    "FID": "1.21e-03",
+    "RMSE": "1.26e-02",
+    "disc loss": "1.21e+00",
+    "gen loss": "7.59e-01",
+    "notes": "worse performance with larger gen lr"
+}

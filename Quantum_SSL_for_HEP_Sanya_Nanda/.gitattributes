@@ -1,0 +1,17 @@
+# Ensure consistent line endings for all files
+* text=auto
+
+# Specific file types
+*.sh eol=lf
+*.bat eol=crlf
+
+# Treat image files as binary
+*.jpg binary
+*.png binary
+*.gif binary
+
+# Custom diff for markdown files
+*.md diff=markdown
+
+# Lockable files (for use with Git LFS)
+*.psd lockable

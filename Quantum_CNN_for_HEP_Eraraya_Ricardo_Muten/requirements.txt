@@ -1,0 +1,5 @@
+numpy
+sympy
+cirq==0.11.0
+tensorflow==2.4.1
+tensorflow-quantum==0.5.1

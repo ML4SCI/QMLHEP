@@ -1,0 +1,15 @@
+cirq==1.0.0
+cirq_core==0.14.1
+numba==0.55.2
+numpy==1.21.6
+scikit_learn==1.1.2
+sympy==1.8
+tabulate==0.8.9
+tensorflow==2.7.0
+tensorflow_addons==0.17.0
+tensorflow_quantum==0.6.1
+tqdm==4.64.1
+wandb==0.12.17
+jax==0.3.17
+PennyLane==0.26.0
+tensorflow-datasets==4.6.0

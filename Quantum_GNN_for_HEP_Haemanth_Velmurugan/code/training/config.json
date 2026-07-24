@@ -1,0 +1,6 @@
+{
+  "INPUT DIMS": 8,
+  "OUTPUT DIMS": 1,
+  "BATCH SIZE": 64,
+  "EPOCHS": 20
+}

@@ -1,0 +1,4 @@
+cirq==0.15.0
+tensorflow_quantum==0.6.1
+tabulate==0.8.9
+

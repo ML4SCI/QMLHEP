@@ -1,0 +1,39 @@
+args.learning_rate = 0.1
+args.ansatz = 'NQubit'
+args.sparse = True
+args.batch_size = 128
+args.cluster_state = 1
+
+n_layers_to_add = 1
+args.n_layers = n_layers_to_add
+args.epochs = 20
+args.n_qubits = 2
+n_layer_steps = 4
+
+Using Ranger optimizer
+
+(0, 0): ───H───Y^w0───@───Y^w2───@───Y^w4───@───Y^w6───@───
+                      │          │          │          │
+(0, 1): ───H───Y^w1───@───Y^w3───@───Y^w5───@───Y^w7───@───
+
+Model: "QCNNHybrid-AngleMap-NQubit"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_10 (InputLayer)       [(None, 8, 8, 1)]         0         
+                                                                 
+ qconv2d_1 (QConv2D)         (None, 4, 4, 1)           80        
+                                                                 
+ max_pooling2d_9 (MaxPooling  (None, 2, 2, 1)          0         
+ 2D)                                                             
+                                                                 
+ flatten_8 (Flatten)         (None, 4)                 0         
+                                                                 
+ dense_18 (Dense)            (None, 8)                 40        
+                                                                 
+ dense_19 (Dense)            (None, 2)                 18        
+                                                                 
+=================================================================
+
+n_sweeps = 4
+partition_percentage = 0.5
