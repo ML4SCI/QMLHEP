@@ -2,6 +2,14 @@
 
 **When does language-model reasoning actually help variational quantum circuit architecture search?**
 
+> **ML4SCI/QMLHEP copy.** This report is reproduced from
+> [`dorakingx/llm-vqc`](https://github.com/dorakingx/llm-vqc) at tag
+> [`gsoc-2026-final`](https://github.com/dorakingx/llm-vqc/tree/gsoc-2026-final). In this
+> folder, "this repository" and "the repository root" mean
+> `Quantum_Circuit_Design_with_LLMs_Tomoya_Hatanaka/`: run every command from here instead of
+> cloning `llm-vqc` (see [`README.md`](./README.md)). Links to material that is kept only in
+> the development repository (`archive/`, its CI workflow) point to that tag.
+
 ---
 
 ## Project information
@@ -527,7 +535,7 @@ not reused here.
 
 **Independently reproduced in CI.** The same `./scripts/check.sh` runs on every
 push to `main` and every pull request via
-[`.github/workflows/ci.yml`](./.github/workflows/ci.yml), on **Ubuntu with
+[`.github/workflows/ci.yml`](https://github.com/dorakingx/llm-vqc/blob/gsoc-2026-final/.github/workflows/ci.yml), on **Ubuntu with
 Python 3.12** — a different OS and Python version from the local run — installing
 the project from scratch exactly as §7.1 describes. It reports the identical
 **`All checks passed!` / `603 passed`**, so the fresh-clone setup path is verified
@@ -567,7 +575,7 @@ API key present:
   snapshot is deliberately left as-is, because it records what actually ran.
 <!-- TEST_RESULTS_END -->
 
-Archived code under [`archive/`](./archive) is intentionally **excluded** from
+Archived code under [`archive/`](https://github.com/dorakingx/llm-vqc/tree/gsoc-2026-final/archive) is intentionally **excluded** from
 both lint and test collection (`testpaths = ["tests"]` in
 [`pyproject.toml`](./pyproject.toml)); it is a read-only historical record, not
 part of the build.
@@ -708,7 +716,7 @@ a result anywhere in this repository.**
 6. **Unblock or retire the `bench_v2` line.** Its LLM cells never ran
    (account-level `insufficient_quota`); recorded spend is $0.000000. Protocol
    and machinery are archived at
-   [`archive/pre-consolidation/docs/research/BENCHMARK_V2_PROTOCOL.md`](./archive/pre-consolidation/docs/research/BENCHMARK_V2_PROTOCOL.md).
+   [`archive/pre-consolidation/docs/research/BENCHMARK_V2_PROTOCOL.md`](https://github.com/dorakingx/llm-vqc/blob/gsoc-2026-final/archive/pre-consolidation/docs/research/BENCHMARK_V2_PROTOCOL.md).
    *(Blocked, never executed.)*
 7. **Noise and hardware.** Everything here is noiseless state-vector simulation.
    *(Out of scope for this project; unexecuted.)*
@@ -745,7 +753,7 @@ gitignored and [`.env.example`](./.env.example) contains placeholders only.
 **Privacy.** Every commit on the final `main` line is authored as
 `Doraking <120563040+dorakingx@users.noreply.github.com>`. Personal-email commits
 existed only on the disconnected pre-rewrite branches, which are now deleted;
-their content is preserved under [`archive/`](./archive) as part of the current
+their content is preserved under [`archive/`](https://github.com/dorakingx/llm-vqc/tree/gsoc-2026-final/archive) as part of the current
 history. The contributor's name appears in the repository only as **deliberate
 authorship attribution** on GSoC deliverables.
 
@@ -878,6 +886,6 @@ The canonical submission URL remains the `main` copy, which stays current:
   permission-gated; the committed PPTX/PDF files are authoritative.
 - **Japanese summary** of the supporting study —
   [`outputs/qae_budget_targets_v2_20260908/SUMMARY_JA.md`](./outputs/qae_budget_targets_v2_20260908/SUMMARY_JA.md)
-- **Archived research lines** — [`archive/README.md`](./archive/README.md)
+- **Archived research lines** — [`archive/README.md`](https://github.com/dorakingx/llm-vqc/blob/gsoc-2026-final/archive/README.md)
 
 **This Markdown file is the canonical GSoC 2026 work-product submission page.**

@@ -84,7 +84,7 @@ they hold real experimental artifacts `main` never had.
 They were **not** force-merged — merging unrelated histories to tidy the graph
 would have been cosmetic. Instead their unique content (630 files, ~29 MB) was
 copied verbatim onto `main` under
-[`archive/pre-consolidation/`](../../archive/pre-consolidation), at its original
+[`archive/pre-consolidation/`](https://github.com/dorakingx/llm-vqc/tree/gsoc-2026-final/archive/pre-consolidation), at its original
 repository-relative paths, before the branches were deleted.
 
 | Branch (deleted) | Tip SHA | Status |
@@ -99,7 +99,7 @@ repository-relative paths, before the branches were deleted.
 
 The two tips agreed **byte-for-byte on all 137 paths they shared**, so the union
 copied to `archive/` is unambiguous. What each archived line contains, and why it
-was superseded, is in [`archive/README.md`](../../archive/README.md).
+was superseded, is in [`archive/README.md`](https://github.com/dorakingx/llm-vqc/blob/gsoc-2026-final/archive/README.md).
 
 Archived content is **read-only**: it is excluded from lint and from pytest
 collection, and reproducing those studies means checking out the SHA above, not
