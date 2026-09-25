@@ -1,0 +1,30 @@
+# Phase 3 SMOKE-scale diagnostics config. Small sample counts to exercise
+# the expressibility / Meyer-Wallach / gradient-variance pipeline end to
+# end quickly. NOT research scale — see the `research` note below and
+# llm_vqc/diagnostics/README.md. Outputs from this config must never be
+# reported as scientific findings (KL expressibility is biased at low
+# sample counts).
+name: diagnostics_smoke
+seed: 0
+params:
+  scale: smoke
+  diagnostics: [expressibility, entanglement, gradient_variance]
+  config:
+    backend: default.qubit
+    diff_method: backprop
+    dtype: float64
+    expressibility:
+      n_pairs: 300
+      n_bins: 75
+      robustness_n_bins: 100
+      n_replicates: 2
+    entanglement:
+      n_samples: 300
+      n_replicates: 2
+    gradient_variance:
+      n_inits: 40
+      cost_observable: Z0
+      n_bootstrap: 200
+  # For reference only (not used by the smoke script): research scale is
+  # n_pairs=5000 / n_samples=5000 / n_inits=200, n_replicates=5, matching
+  # Sim et al. 2019.

@@ -1,0 +1,891 @@
+{
+  "rows": [
+    {
+      "seed": 9,
+      "method": "LLM-Closed",
+      "candidate": "chain_forward_real",
+      "order": 1,
+      "phase": "explore",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": NaN,
+      "strategy": "",
+      "train_loss": 0.06288474088034013,
+      "val_loss": 0.055635842769819255,
+      "test_loss": 0.059430195918573125,
+      "train_fid": 0.9371152591196599,
+      "val_fid": 0.9443641572301807,
+      "test_fid": 0.9405698040814269
+    },
+    {
+      "seed": 9,
+      "method": "LLM-Closed",
+      "candidate": "trash_to_latent_reverse",
+      "order": 2,
+      "phase": "explore",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": NaN,
+      "strategy": "",
+      "train_loss": 0.056371378992526866,
+      "val_loss": 0.047671795594959376,
+      "test_loss": 0.05366639813339913,
+      "train_fid": 0.9436286210074731,
+      "val_fid": 0.9523282044050406,
+      "test_fid": 0.9463336018666009
+    },
+    {
+      "seed": 9,
+      "method": "LLM-Closed",
+      "candidate": "dispersed_cnot_and_rotations",
+      "order": 3,
+      "phase": "explore",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": NaN,
+      "strategy": "",
+      "train_loss": 0.15569974360053296,
+      "val_loss": 0.16893949216207338,
+      "test_loss": 0.14509632431015917,
+      "train_fid": 0.844300256399467,
+      "val_fid": 0.8310605078379266,
+      "test_fid": 0.8549036756898408
+    },
+    {
+      "seed": 9,
+      "method": "LLM-Closed",
+      "candidate": "chain_block_encoder",
+      "order": 4,
+      "phase": "explore",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": NaN,
+      "strategy": "",
+      "train_loss": 0.1778171690743764,
+      "val_loss": 0.19568903786689307,
+      "test_loss": 0.16465574773221614,
+      "train_fid": 0.8221828309256236,
+      "val_fid": 0.8043109621331069,
+      "test_fid": 0.8353442522677839
+    },
+    {
+      "seed": 9,
+      "method": "LLM-Closed",
+      "candidate": "lat0_enc_v2",
+      "order": 5,
+      "phase": "refine",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": 0.9375,
+      "strategy": "topology_redesign",
+      "train_loss": 0.25594573078987226,
+      "val_loss": 0.22893516537535719,
+      "test_loss": 0.2633477181071997,
+      "train_fid": 0.7440542692101277,
+      "val_fid": 0.7710648346246428,
+      "test_fid": 0.7366522818928003
+    },
+    {
+      "seed": 9,
+      "method": "LLM-Closed",
+      "candidate": "fallback_p5",
+      "order": 6,
+      "phase": "refine",
+      "fallback": true,
+      "invalid_errors": "invalid: gates must be a list of exactly 16 entries",
+      "edit_distance": 1.0,
+      "strategy": "",
+      "train_loss": 0.32645192428363723,
+      "val_loss": 0.3112299125385595,
+      "test_loss": 0.3275088522206665,
+      "train_fid": 0.6735480757163628,
+      "val_fid": 0.6887700874614405,
+      "test_fid": 0.6724911477793335
+    },
+    {
+      "seed": 9,
+      "method": "LLM-Closed",
+      "candidate": "lat_neigh_swap_v1",
+      "order": 7,
+      "phase": "refine",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": 0.875,
+      "strategy": "topology_redesign",
+      "train_loss": 0.10931223645065569,
+      "val_loss": 0.11148370316650968,
+      "test_loss": 0.10337758755236282,
+      "train_fid": 0.8906877635493443,
+      "val_fid": 0.8885162968334903,
+      "test_fid": 0.8966224124476372
+    },
+    {
+      "seed": 9,
+      "method": "LLM-Closed",
+      "candidate": "latent_chain_entangle_v2",
+      "order": 8,
+      "phase": "refine",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": 0.75,
+      "strategy": "topology_redesign",
+      "train_loss": 0.03364086164633717,
+      "val_loss": 0.03180492666902657,
+      "test_loss": 0.031102227148064654,
+      "train_fid": 0.9663591383536628,
+      "val_fid": 0.9681950733309734,
+      "test_fid": 0.9688977728519353
+    }
+  ],
+  "architectures": [
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      }
+    ],
+    [
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 3
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      }
+    ]
+  ],
+  "warm_rejected": [
+    {
+      "index": 1,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "interleaved_rotations_mixed_axes",
+        "gates": [
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 1
+          }
+        ]
+      }
+    }
+  ],
+  "refine_failures": [
+    {
+      "proposal": 5,
+      "reason": "invalid: gates must be a list of exactly 16 entries"
+    }
+  ],
+  "model_snapshots": [
+    "gpt-4.1-mini-2025-04-14"
+  ],
+  "total_input_tokens": 5519,
+  "total_output_tokens": 2765,
+  "budget_spent_usd_estimate": 0.045,
+  "n_calls": 7
+}

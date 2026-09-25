@@ -1,0 +1,1832 @@
+{
+  "candidates": {
+    "real_preserving_zx": [
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 3
+      }
+    ],
+    "latency_chain_mix": [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      }
+    ],
+    "cross_chain_cnot": [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      }
+    ],
+    "fallback_random_0": [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      }
+    ],
+    "fallback_random_1": [
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 1
+      }
+    ],
+    "fallback_random_2": [
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      }
+    ],
+    "fallback_random_3": [
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 3
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      }
+    ],
+    "fallback_random_4": [
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 1
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      }
+    ]
+  },
+  "fallback_names": [
+    "fallback_random_0",
+    "fallback_random_1",
+    "fallback_random_2",
+    "fallback_random_3",
+    "fallback_random_4"
+  ],
+  "rejected": [
+    {
+      "index": 0,
+      "errors": [
+        "capacity mismatch: rotations=11, CNOTs=5"
+      ],
+      "entry": {
+        "name": "chain_flow_ry",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "alternating_angles",
+        "gates": [
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "errors": [
+        "capacity mismatch: rotations=11, CNOTs=5"
+      ],
+      "entry": {
+        "name": "reverse_chain_ry",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "local_mix_real",
+        "gates": [
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "errors": [
+        "capacity mismatch: rotations=11, CNOTs=5"
+      ],
+      "entry": {
+        "name": "trash_to_latent_ry",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 0,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "chain_block_ry_rz",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 3
+          }
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "alt_rotations_chain",
+        "gates": [
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RX",
+            "q": 3
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "pairwise_mix_rz_ry",
+        "gates": [
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 0
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "reverse_pair_rx_ry",
+        "gates": [
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 3
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "center_out_ry_rz",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 3
+          }
+        ]
+      }
+    },
+    {
+      "index": 0,
+      "errors": [
+        "gates must be a list of exactly 16 entries"
+      ],
+      "entry": {
+        "name": "chain_even_split",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 3
+          }
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "errors": [
+        "gates must be a list of exactly 16 entries"
+      ],
+      "entry": {
+        "name": "alternate_rx_ry_cnot",
+        "gates": [
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "errors": [
+        "gates must be a list of exactly 16 entries"
+      ],
+      "entry": {
+        "name": "focused_pairs_ry_rz",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "errors": [
+        "gates must be a list of exactly 16 entries"
+      ],
+      "entry": {
+        "name": "reverse_chain_rx_ry",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RX",
+            "q": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "errors": [
+        "gates must be a list of exactly 16 entries"
+      ],
+      "entry": {
+        "name": "center_out_rx_ry_rz",
+        "gates": [
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          }
+        ]
+      }
+    }
+  ],
+  "model_snapshots": [
+    "gpt-4.1-mini-2025-04-14"
+  ],
+  "total_input_tokens": 3206,
+  "total_output_tokens": 3779,
+  "n_calls": 3,
+  "max_output_tokens": 6000
+}

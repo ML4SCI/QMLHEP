@@ -1,0 +1,25 @@
+{
+  "Random": {
+    "evaluations": 192,
+    "fallback_evaluations": 0
+  },
+  "Greedy": {
+    "evaluations": 192,
+    "fallback_evaluations": 0
+  },
+  "LLM-Open": {
+    "evaluations": 192,
+    "fallback_evaluations": 0,
+    "pool_rejected_entries": 0,
+    "pool_fallbacks": 0
+  },
+  "LLM-Closed": {
+    "evaluations": 192,
+    "fallback_evaluations": 15,
+    "refine_failure_reasons": {
+      "invalid": 11,
+      "duplicate_of_other": 4
+    },
+    "warm_rejected_entries": 12
+  }
+}

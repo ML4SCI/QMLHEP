@@ -1,0 +1,7 @@
+EXIT 0 reference
+EXIT 0 budget_b4
+EXIT 0 hamiltonian_xxz
+EXIT 0 qubits_n6
+EXIT 0 budget_b16
+EXIT 0 model_alt
+EXIT 0 qubits_n8

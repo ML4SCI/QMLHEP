@@ -1,0 +1,27 @@
+# Phase 3 deterministic-resume smoke test: same name + same
+# reproducibility-critical config as diagnostics_smoke.yaml, so re-running
+# scripts/smoke_diagnostics.py against an existing diagnostic store
+# resumes (skips completed measurements) instead of repeating them.
+# Changing any config field here and re-running is the negative test: it
+# MUST raise IncompatibleDiagnosticResumeError.
+name: diagnostics_smoke
+seed: 0
+params:
+  scale: smoke
+  diagnostics: [expressibility, entanglement, gradient_variance]
+  config:
+    backend: default.qubit
+    diff_method: backprop
+    dtype: float64
+    expressibility:
+      n_pairs: 300
+      n_bins: 75
+      robustness_n_bins: 100
+      n_replicates: 2
+    entanglement:
+      n_samples: 300
+      n_replicates: 2
+    gradient_variance:
+      n_inits: 40
+      cost_observable: Z0
+      n_bootstrap: 200

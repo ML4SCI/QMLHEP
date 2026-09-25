@@ -1,0 +1,47 @@
+{
+  "note": "Observed execution segments, recorded from the run logs in run_logs/. Wall clock is an operational figure, not a benchmark: a resumed or regenerated invocation reloads stored seeds from disk.",
+  "target_tfim_b6": {
+    "segments": [
+      {
+        "segment": 1,
+        "outcome": "interrupted",
+        "cause": "transient DNS failure (nodename nor servname provided) raised as openai.APIConnectionError",
+        "completed": "LLM-Open pool + LLM-Closed seeds 0-9",
+        "wall_clock_seconds": null,
+        "wall_clock_note": "not recorded: the process raised before writing its run record"
+      },
+      {
+        "segment": 2,
+        "outcome": "completed",
+        "cause": "resumed with the cost cap reduced by the spend already incurred",
+        "completed": "reloaded pool + seeds 0-9 from disk, ran LLM-Closed seeds 10-11, wrote all tables",
+        "wall_clock_seconds": 151.5
+      },
+      {
+        "segment": 3,
+        "outcome": "completed",
+        "cause": "reuse-only regeneration after a fix to the repair-call counter",
+        "completed": "rebuilt tables and record from stored artefacts with no API key and no cost cap configured; tables reproduced byte-for-byte",
+        "wall_clock_seconds": 126.5
+      }
+    ]
+  },
+  "target_xxz_b10": {
+    "segments": [
+      {
+        "segment": 1,
+        "outcome": "completed",
+        "cause": "single cold run",
+        "completed": "LLM-Closed seeds 0-11, 81 API calls",
+        "wall_clock_seconds": 226.6
+      },
+      {
+        "segment": 2,
+        "outcome": "completed",
+        "cause": "reuse-only regeneration after a fix to the repair-call counter",
+        "completed": "rebuilt tables and record from stored artefacts; tables reproduced byte-for-byte",
+        "wall_clock_seconds": 3.0
+      }
+    ]
+  }
+}

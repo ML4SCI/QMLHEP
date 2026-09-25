@@ -1,0 +1,1744 @@
+{
+  "rows": [
+    {
+      "seed": 7,
+      "method": "LLM-Closed",
+      "candidate": "warm_fallback_0",
+      "order": 1,
+      "phase": "explore",
+      "fallback": true,
+      "invalid_errors": "",
+      "edit_distance": NaN,
+      "strategy": "",
+      "train_loss": 0.45128120843480635,
+      "val_loss": 0.4581225286503955,
+      "test_loss": 0.4540353031476456,
+      "train_fid": 0.5487187915651937,
+      "val_fid": 0.5418774713496045,
+      "test_fid": 0.5459646968523544
+    },
+    {
+      "seed": 7,
+      "method": "LLM-Closed",
+      "candidate": "warm_fallback_1",
+      "order": 2,
+      "phase": "explore",
+      "fallback": true,
+      "invalid_errors": "",
+      "edit_distance": NaN,
+      "strategy": "",
+      "train_loss": 0.3326013848692282,
+      "val_loss": 0.3438673677169325,
+      "test_loss": 0.3343690450919974,
+      "train_fid": 0.6673986151307718,
+      "val_fid": 0.6561326322830675,
+      "test_fid": 0.6656309549080026
+    },
+    {
+      "seed": 7,
+      "method": "LLM-Closed",
+      "candidate": "warm_fallback_2",
+      "order": 3,
+      "phase": "explore",
+      "fallback": true,
+      "invalid_errors": "",
+      "edit_distance": NaN,
+      "strategy": "",
+      "train_loss": 0.17541655436001702,
+      "val_loss": 0.1639687687776119,
+      "test_loss": 0.15510050935630426,
+      "train_fid": 0.824583445639983,
+      "val_fid": 0.8360312312223881,
+      "test_fid": 0.8448994906436957
+    },
+    {
+      "seed": 7,
+      "method": "LLM-Closed",
+      "candidate": "warm_fallback_3",
+      "order": 4,
+      "phase": "explore",
+      "fallback": true,
+      "invalid_errors": "",
+      "edit_distance": NaN,
+      "strategy": "",
+      "train_loss": 0.47666621976338774,
+      "val_loss": 0.4820930473504186,
+      "test_loss": 0.4795579447319034,
+      "train_fid": 0.5233337802366123,
+      "val_fid": 0.5179069526495814,
+      "test_fid": 0.5204420552680966
+    },
+    {
+      "seed": 7,
+      "method": "LLM-Closed",
+      "candidate": "chain_latent_focus_v2",
+      "order": 5,
+      "phase": "refine",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": 0.9375,
+      "strategy": "topology_redesign",
+      "train_loss": 0.19233621196579276,
+      "val_loss": 0.17501044060078108,
+      "test_loss": 0.16393946897167833,
+      "train_fid": 0.8076637880342072,
+      "val_fid": 0.8249895593992189,
+      "test_fid": 0.8360605310283217
+    },
+    {
+      "seed": 7,
+      "method": "LLM-Closed",
+      "candidate": "chain_entangle_latent_trash",
+      "order": 6,
+      "phase": "refine",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": 0.9375,
+      "strategy": "topology_redesign",
+      "train_loss": 0.1523746419163169,
+      "val_loss": 0.14360076853878023,
+      "test_loss": 0.13241705953807203,
+      "train_fid": 0.8476253580836831,
+      "val_fid": 0.8563992314612198,
+      "test_fid": 0.867582940461928
+    },
+    {
+      "seed": 7,
+      "method": "LLM-Closed",
+      "candidate": "latency_chain_v2",
+      "order": 7,
+      "phase": "refine",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": 0.4375,
+      "strategy": "local_adjustment",
+      "train_loss": 0.1660206708192321,
+      "val_loss": 0.1534722507597488,
+      "test_loss": 0.1431720518158377,
+      "train_fid": 0.8339793291807679,
+      "val_fid": 0.8465277492402512,
+      "test_fid": 0.8568279481841623
+    },
+    {
+      "seed": 7,
+      "method": "LLM-Closed",
+      "candidate": "chain_latent_encoding_v2",
+      "order": 8,
+      "phase": "refine",
+      "fallback": false,
+      "invalid_errors": "",
+      "edit_distance": 0.875,
+      "strategy": "topology_redesign",
+      "train_loss": 0.5282106858923288,
+      "val_loss": 0.5296323442091839,
+      "test_loss": 0.5265764505148142,
+      "train_fid": 0.4717893141076713,
+      "val_fid": 0.47036765579081613,
+      "test_fid": 0.47342354948518584
+    }
+  ],
+  "architectures": [
+    [
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 0
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 2
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 1
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 3
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 0
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 1
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Z",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 3
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 0
+      }
+    ],
+    [
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 0,
+        "t": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 1,
+        "t": 2
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 0
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 1
+      },
+      {
+        "type": "R",
+        "axis": "Y",
+        "q": 2
+      },
+      {
+        "type": "R",
+        "axis": "X",
+        "q": 3
+      },
+      {
+        "type": "CX",
+        "c": 2,
+        "t": 3
+      },
+      {
+        "type": "CX",
+        "c": 3,
+        "t": 2
+      }
+    ]
+  ],
+  "warm_rejected": [
+    {
+      "index": 0,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "chain-forward",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          }
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "mirror-back",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "cross-entangle",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "interleaved-latent-trash",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 0,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "chain-layered",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          }
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "mirror-cnot-mid",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "cross-chain-entangle",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "interleave-latent-trash",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 0,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "lat-trash-interleave-1",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          }
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "chain-sandwich",
+        "gates": [
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "mirror-lat-trash",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 2
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "errors": [
+        "capacity mismatch: rotations=13, CNOTs=3"
+      ],
+      "entry": {
+        "name": "cross-chain-balanced",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          }
+        ]
+      }
+    }
+  ],
+  "refine_failures": [],
+  "model_snapshots": [
+    "gpt-4.1-mini-2025-04-14"
+  ],
+  "total_input_tokens": 6316,
+  "total_output_tokens": 3856,
+  "budget_spent_usd_estimate": 0.04999999999999999,
+  "n_calls": 7
+}

@@ -1,0 +1,16 @@
+# Phase 2 SMOKE-TEST scale config for T2 (sklearn digits 3-vs-8 fallback;
+# see DECISIONS.md Gate G1 for why this replaces the inaccessible ECAL
+# dataset). Small epoch count and few circuits, not a research run.
+name: t2_smoke
+seed: 0
+params:
+  task: T2
+  scale: smoke
+  n_circuits: 3
+  training:
+    epochs: 5
+    learning_rate: 0.05
+    batch_size: 16
+    lr_decay_factor: 0.5
+    lr_decay_epochs: [2, 4]
+    weight_decay: 1.0e-5

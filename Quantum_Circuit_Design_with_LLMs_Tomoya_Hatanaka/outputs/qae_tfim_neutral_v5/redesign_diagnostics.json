@@ -1,0 +1,42 @@
+{
+  "n_refine_proposals": 48,
+  "n_llm_proposals": 40,
+  "n_fallbacks": 8,
+  "edit_distance_mean": 0.6296875,
+  "edit_distance_median": 0.6875,
+  "edit_distance_min": 0.0625,
+  "edit_distance_max": 1.0,
+  "changed_slots_mean": 10.075,
+  "accepted_total": 7,
+  "local_proposals_le_4_slots": {
+    "n": 4,
+    "accepted": 1
+  },
+  "global_proposals_gt_4_slots": {
+    "n": 36,
+    "accepted": 6
+  },
+  "strategy_stats": {
+    "global_redesign": {
+      "proposals": 7,
+      "accepted": 1,
+      "mean_edit_distance": 0.5357142857142857
+    },
+    "local_adjustment": {
+      "proposals": 1,
+      "accepted": 0,
+      "mean_edit_distance": 0.75
+    },
+    "topology_redesign": {
+      "proposals": 32,
+      "accepted": 6,
+      "mean_edit_distance": 0.646484375
+    }
+  },
+  "diversity": {
+    "warm4_mean_pairwise_distance": 0.8185763888888888,
+    "refine4_mean_pairwise_distance": 0.6979166666666666
+  },
+  "_accepted_note": "accepted = validation loss strictly better than all prior candidates in the seed",
+  "_local_note": "local = edit distance <= 0.25 (<= 4 of 16 slots changed)"
+}

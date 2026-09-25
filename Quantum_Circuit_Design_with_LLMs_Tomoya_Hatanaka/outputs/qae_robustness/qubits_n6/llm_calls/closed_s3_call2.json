@@ -1,0 +1,443 @@
+{
+  "proposal_id": "warm_s3_repair2",
+  "call_index": 0,
+  "system_prompt": "You are a quantum-autoencoder circuit architect. Your job is architecture proposal, not numerical optimization. Respect the exact resource budget. Use the physical structure in the task description to propose circuit hypotheses. Return circuit structure only.",
+  "user_prompt": "Compress ground states of the 6-qubit open-chain transverse-field Ising Hamiltonian H = -sum_i Z_i Z_{i+1} - h sum_i X_i, h in [0.2, 2.0], into latent qubits q0,q1,q2 while trash qubits q3,q4,q5 should end in |000>. The Hamiltonian is real in the computational basis, so its ground-state amplitudes can be chosen real. Interactions are nearest-neighbor on the open chain q0-q1-q2-q3-q4-q5, so nearest-neighbor correlations are important. Resource contract (exact, non-negotiable): the encoder is an ordered sequence of exactly 24 gates - exactly 18 single-qubit rotations, each RX, RY, or RZ on any qubit (no per-axis quota), and exactly 6 CNOTs, each with any control and any different target (the same pair may repeat at different positions). You choose the gate ORDER freely. You do not choose rotation angles: a shared numerical optimizer trains all 18 angles identically for every method.\nYour earlier candidates below were REJECTED for violating the exact resource contract (exactly 18 rotations and exactly 6 CNOTs, 24 gates):\n- {\"name\":\"left-bias-real\",\"gates\":[{\"g\":\"RY\",\"q\":5},{\"g\":\"RY\",\"q\":4},{\"g\":\"CNOT\",\"c\":5,\"t\":4},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":4,\"t\":3},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":3,\"t\":2},{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":2,\"t\":1},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"CNOT\",\"c\":1,\"t\":0},{\"g\":\"RY\",\"q\":0},{\"g\":\"RX\",\"q\":0},{\"g\":\"RX\",\"q\":1},{\"g\":\"RX\",\"q\":2},{\"g rejected: capacity mismatch: rotations=19, CNOTs=5\n- {\"name\":\"latent-centered\",\"gates\":[{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":2,\"t\":3},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":3,\"t\":4},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":0},{\"g\":\"CNOT\",\"c\":1,\"t\":2},{\"g\":\"RY\",\"q\":5},{\"g\":\"CNOT\",\"c\":4,\"t\":5},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":0,\"t\":1},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":0},{\"g\":\"RY\",\"q\":5},{\"g\":\"RX\",\"q\":0},{\"g\":\"RX\",\"q\":1},{\" rejected: capacity mismatch: rotations=19, CNOTs=5\n- {\"name\":\"alternating-pull\",\"gates\":[{\"g\":\"RY\",\"q\":0},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":0,\"t\":1},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":1,\"t\":2},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":2,\"t\":3},{\"g\":\"RY\",\"q\":4},{\"g\":\"CNOT\",\"c\":3,\"t\":4},{\"g\":\"RY\",\"q\":5},{\"g\":\"CNOT\",\"c\":4,\"t\":5},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"RX\",\"q\":5},{\"g\":\"RX\",\"q\":4},{\"g\":\"RX\",\"q\":3},{ rejected: capacity mismatch: rotations=19, CNOTs=5\n- {\"name\":\"mirror-squeeze\",\"gates\":[{\"g\":\"RZ\",\"q\":0},{\"g\":\"RZ\",\"q\":5},{\"g\":\"RY\",\"q\":4},{\"g\":\"CNOT\",\"c\":5,\"t\":4},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":4,\"t\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":3,\"t\":2},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":2,\"t\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"CNOT\",\"c\":1,\"t\":0},{\"g\":\"RY\",\"q\":0},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":5},{\"g\":\"RX\",\"q\":0},{\"g rejected: capacity mismatch: rotations=19, CNOTs=5\nOutput exactly 4 NEW distinct candidates that satisfy the contract exactly. Count the gates before answering.\nReturn ONLY a single JSON object, no prose and no markdown fences, with this schema:\n{\"candidates\": [{\"name\": \"<short-id>\", \"gates\": [{\"g\": \"RY\", \"q\": 0}, {\"g\": \"CNOT\", \"c\": 3, \"t\": 2}, ...]}]}\nEach gates list holds exactly 24 entries in execution order: a rotation is {\"g\": \"RX\"|\"RY\"|\"RZ\", \"q\": 0-5} and a CNOT is {\"g\": \"CNOT\", \"c\": 0-5, \"t\": 0-5, c != t}. Exactly 18 rotations and exactly 6 CNOTs per candidate.",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.7,
+  "raw_response": "{\"candidates\":[{\"name\":\"left-chain-real\",\"gates\":[{\"g\":\"RY\",\"q\":5},{\"g\":\"RY\",\"q\":4},{\"g\":\"CNOT\",\"c\":5,\"t\":4},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":4,\"t\":3},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":3,\"t\":2},{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":2,\"t\":1},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"CNOT\",\"c\":1,\"t\":0},{\"g\":\"RY\",\"q\":0},{\"g\":\"RX\",\"q\":0},{\"g\":\"RX\",\"q\":1},{\"g\":\"RX\",\"q\":2},{\"g\":\"RX\",\"q\":3},{\"g\":\"RX\",\"q\":4},{\"g\":\"RX\",\"q\":5},{\"g\":\"RZ\",\"q\":0},{\"g\":\"RZ\",\"q\":5}]},{\"name\":\"latent-centered-real\",\"gates\":[{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":2,\"t\":3},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":3,\"t\":4},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":0},{\"g\":\"CNOT\",\"c\":1,\"t\":2},{\"g\":\"RY\",\"q\":5},{\"g\":\"CNOT\",\"c\":4,\"t\":5},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":0,\"t\":1},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":0},{\"g\":\"RY\",\"q\":5},{\"g\":\"RX\",\"q\":0},{\"g\":\"RX\",\"q\":1},{\"g\":\"RX\",\"q\":2},{\"g\":\"RX\",\"q\":3},{\"g\":\"RX\",\"q\":4},{\"g\":\"RX\",\"q\":5},{\"g\":\"RZ\",\"q\":2}]},{\"name\":\"alternating-pull-real\",\"gates\":[{\"g\":\"RY\",\"q\":0},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":0,\"t\":1},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":1,\"t\":2},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":2,\"t\":3},{\"g\":\"RY\",\"q\":4},{\"g\":\"CNOT\",\"c\":3,\"t\":4},{\"g\":\"RY\",\"q\":5},{\"g\":\"CNOT\",\"c\":4,\"t\":5},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"RX\",\"q\":5},{\"g\":\"RX\",\"q\":4},{\"g\":\"RX\",\"q\":3},{\"g\":\"RX\",\"q\":2},{\"g\":\"RX\",\"q\":1},{\"g\":\"RX\",\"q\":0},{\"g\":\"RZ\",\"q\":3},{\"g\":\"RZ\",\"q\":4}]},{\"name\":\"mirror-squeeze-real\",\"gates\":[{\"g\":\"RZ\",\"q\":0},{\"g\":\"RZ\",\"q\":5},{\"g\":\"RY\",\"q\":4},{\"g\":\"CNOT\",\"c\":5,\"t\":4},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":4,\"t\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":3,\"t\":2},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":2,\"t\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"CNOT\",\"c\":1,\"t\":0},{\"g\":\"RY\",\"q\":0},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":5},{\"g\":\"RX\",\"q\":0},{\"g\":\"RX\",\"q\":1},{\"g\":\"RX\",\"q\":2},{\"g\":\"RX\",\"q\":3},{\"g\":\"RX\",\"q\":4},{\"g\":\"RX\",\"q\":5}]}]}",
+  "parsed_proposal": {
+    "candidates": [
+      {
+        "name": "left-chain-real",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "CNOT",
+            "c": 5,
+            "t": 4
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 4,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 4
+          },
+          {
+            "g": "RX",
+            "q": 5
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 5
+          }
+        ]
+      },
+      {
+        "name": "latent-centered-real",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 4
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "CNOT",
+            "c": 4,
+            "t": 5
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 4
+          },
+          {
+            "g": "RX",
+            "q": 5
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          }
+        ]
+      },
+      {
+        "name": "alternating-pull-real",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 4
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "CNOT",
+            "c": 4,
+            "t": 5
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 5
+          },
+          {
+            "g": "RX",
+            "q": 4
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "RZ",
+            "q": 4
+          }
+        ]
+      },
+      {
+        "name": "mirror-squeeze-real",
+        "gates": [
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RZ",
+            "q": 5
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "CNOT",
+            "c": 5,
+            "t": 4
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 4,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 4
+          },
+          {
+            "g": "RX",
+            "q": 5
+          }
+        ]
+      }
+    ]
+  },
+  "validation_errors": [],
+  "input_tokens": 1305,
+  "output_tokens": 931,
+  "estimated_cost_usd": null,
+  "latency_seconds": 4.9056584170321,
+  "created_at": "2026-09-03T18:41:59.487888+00:00"
+}

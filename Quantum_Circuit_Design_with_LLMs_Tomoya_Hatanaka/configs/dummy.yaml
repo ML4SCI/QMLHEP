@@ -1,0 +1,5 @@
+# Phase 0 smoke-test config: exercises the config -> run-dir -> manifest
+# pipeline before any real task/arm/search logic exists (Phase 1+).
+name: dummy_phase0_smoke
+seed: 0
+params: {}

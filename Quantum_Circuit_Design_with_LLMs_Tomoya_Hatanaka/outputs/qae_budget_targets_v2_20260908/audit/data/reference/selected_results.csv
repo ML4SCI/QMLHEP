@@ -1,0 +1,49 @@
+seed,method,candidate,order,phase,fallback,invalid_errors,edit_distance,strategy,val_loss,val_fid
+0,Greedy,G7_acc,7,refine,False,,0.125,,0.1144892667834817,0.8855107332165183
+0,LLM-Closed,nn-real-split-v1,5,refine,False,,0.75,topology_redesign,0.0277706999217421,0.9722293000782578
+0,LLM-Open,nn-chain-real,8,explore,False,,,,0.022465467379687,0.977534532620313
+0,Random,R7,7,explore,False,,,,0.0179619582150029,0.9820380417849972
+1,Greedy,G1_warm,1,explore,False,,0.125,,0.0887335021220711,0.9112664978779288
+1,LLM-Closed,mirror-rz-ry-chain,2,explore,False,,0.6875,topology_redesign,0.0356311828131357,0.9643688171868644
+1,LLM-Open,nn-chain-real,8,explore,False,,,,0.0398438178239737,0.9601561821760264
+1,Random,R2,2,explore,False,,,,0.0870454455839754,0.9129545544160246
+2,Greedy,G7_acc,7,refine,False,,0.0625,,0.167436172146551,0.832563827853449
+2,LLM-Closed,nn-real-latent-sink,6,refine,False,invalid: gates must be a list of exactly 16 entries,0.6875,global_redesign,0.0417828723978103,0.9582171276021896
+2,LLM-Open,nn-chain-real,8,explore,False,,,,0.0722224063794966,0.9277775936205034
+2,Random,R1,1,explore,False,,,,0.1052861738034307,0.8947138261965693
+3,Greedy,G6_acc,6,refine,False,,0.125,,0.0502285628099677,0.9497714371900322
+3,LLM-Closed,nn-real-latent-trash,6,refine,False,,0.0625,topology_redesign,0.0290621372249101,0.97093786277509
+3,LLM-Open,nn-chain-real,8,explore,False,,,,0.0616215184549705,0.9383784815450296
+3,Random,R4,4,explore,False,,,,0.2335929955268497,0.7664070044731502
+4,Greedy,G7_acc,7,refine,False,,0.0625,,0.1701816240687167,0.8298183759312833
+4,LLM-Closed,latent-centered-pull,2,explore,False,,0.9375,topology_redesign,0.0402708344692249,0.959729165530775
+4,LLM-Open,nn-chain-real,8,explore,False,,,,0.0424837746433137,0.9575162253566862
+4,Random,R6,6,explore,False,,,,0.1369472397223438,0.8630527602776562
+5,Greedy,G5_acc,5,refine,False,,0.125,,0.1742948583651843,0.8257051416348157
+5,LLM-Closed,latent-first-braid,2,explore,False,,0.375,topology_redesign,0.0306160922543569,0.9693839077456432
+5,LLM-Open,nn-chain-real,8,explore,False,,,,0.0347850404639924,0.9652149595360076
+5,Random,R2,2,explore,False,,,,0.2362329261217345,0.7637670738782655
+6,Greedy,G4_warm,4,explore,False,,0.0625,,0.0605917428979961,0.9394082571020038
+6,LLM-Closed,latent-first-chain,2,explore,False,,0.25,topology_redesign,0.0139385220807666,0.9860614779192334
+6,LLM-Open,nn-chain-real,8,explore,False,,,,0.0168021263681966,0.9831978736318032
+6,Random,R7,7,explore,False,,,,0.0600822623587816,0.9399177376412184
+7,Greedy,G6_acc,6,refine,False,,0.125,,0.0858144472374854,0.9141855527625146
+7,LLM-Closed,nn-real-latent-trash-v2,5,refine,False,invalid: gates must be a list of exactly 16 entries,0.6875,topology_redesign,0.0403693849913432,0.9596306150086568
+7,LLM-Open,nn-chain-real,8,explore,False,,,,0.0410802021725773,0.9589197978274226
+7,Random,R1,1,explore,False,,,,0.141694370446297,0.8583056295537029
+8,Greedy,G6_acc,6,refine,False,,0.0625,,0.0834626654224907,0.9165373345775092
+8,LLM-Closed,nn-real-braid-v1,8,refine,False,invalid: gates must be a list of exactly 16 entries,0.375,topology_redesign,0.0299079917233114,0.9700920082766884
+8,LLM-Open,nn-chain-real,8,explore,False,,,,0.0331614536608908,0.9668385463391092
+8,Random,R2,2,explore,False,,,,0.1473327404321865,0.8526672595678134
+9,Greedy,G5_acc,5,refine,False,,0.0625,,0.1820941006701328,0.8179058993298671
+9,LLM-Closed,mirror-latent-bottleneck,3,explore,False,"invalid: capacity mismatch: rotations=11, CNOTs=5",0.875,topology_redesign,0.0268231320902382,0.9731768679097618
+9,LLM-Open,nn-chain-real,8,explore,False,,,,0.0399885742878037,0.9600114257121962
+9,Random,R6,6,explore,False,,,,0.1485482017374018,0.8514517982625982
+10,Greedy,G7_acc,7,refine,False,,0.0625,,0.3310252819683758,0.6689747180316242
+10,LLM-Closed,nn-funnel-a,2,explore,False,,0.875,topology_redesign,0.034446866400995,0.965553133599005
+10,LLM-Open,nn-chain-real,8,explore,False,,,,0.0387913493636826,0.9612086506363172
+10,Random,R8,8,explore,False,,,,0.2738262189479407,0.7261737810520593
+11,Greedy,G8_acc,8,refine,False,,0.0625,,0.0129828087236486,0.9870171912763512
+11,LLM-Closed,nn-real-swapchain,8,refine,False,"invalid: capacity mismatch: rotations=11, CNOTs=5",0.875,topology_redesign,0.0122713421733342,0.9877286578266656
+11,LLM-Open,nn-chain-real,8,explore,False,,,,0.0147409927524421,0.985259007247558
+11,Random,R3,3,explore,False,,,,0.0944171474805384,0.9055828525194616

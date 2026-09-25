@@ -1,0 +1,75 @@
+{
+  "tiers": {
+    "gpt-5.4-mini-2026-03-17": "High",
+    "gpt-4.1-mini-2025-04-14": "Low"
+  },
+  "group_order": [
+    "Random",
+    "Greedy",
+    "Low",
+    "High"
+  ],
+  "figures": {
+    "baseline_groups": {
+      "panels": [
+        "reference"
+      ],
+      "groups": [
+        "Random",
+        "Greedy",
+        "High(Open, Closed)"
+      ]
+    },
+    "slice_budget": {
+      "panels": [
+        "budget_b4",
+        "reference",
+        "budget_b16"
+      ],
+      "fixed": "fixed: 4 qubits \u00b7 Ising \u00b7 High model",
+      "groups": [
+        "Random",
+        "Greedy",
+        "High(Open, Closed)"
+      ]
+    },
+    "slice_qubits": {
+      "panels": [
+        "reference",
+        "qubits_n6",
+        "qubits_n8"
+      ],
+      "fixed": "fixed: B = 8 \u00b7 Ising \u00b7 High model",
+      "groups": [
+        "Random",
+        "Greedy",
+        "High(Open, Closed)"
+      ]
+    },
+    "slice_hamiltonian": {
+      "panels": [
+        "reference",
+        "hamiltonian_xxz"
+      ],
+      "fixed": "fixed: 4 qubits \u00b7 B = 8 \u00b7 High model",
+      "groups": [
+        "Random",
+        "Greedy",
+        "High(Open, Closed)"
+      ]
+    },
+    "slice_model": {
+      "panels": [
+        "reference",
+        "model_alt"
+      ],
+      "fixed": "4 qubits \u00b7 Ising \u00b7 B = 8",
+      "groups": [
+        "Random",
+        "Greedy",
+        "Low(Open, Closed)",
+        "High(Open, Closed)"
+      ]
+    }
+  }
+}

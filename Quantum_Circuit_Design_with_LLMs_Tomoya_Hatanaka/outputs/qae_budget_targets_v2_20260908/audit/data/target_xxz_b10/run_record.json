@@ -1,0 +1,71 @@
+{
+  "cell": {
+    "key": "target_xxz_b10",
+    "label": "4-qubit XXZ, reference model, B = 10 (LLM-Closed only)",
+    "anchor_key": "hamiltonian_xxz",
+    "factors": {
+      "n_qubits": 4,
+      "family": "XXZ",
+      "budget": 10,
+      "model": "gpt-5.4-mini-2026-03-17"
+    },
+    "n_warm": 5,
+    "n_refine": 5,
+    "methods": [
+      "LLM-Closed"
+    ],
+    "rationale": "XXZ anchor boundary probe: XXZ B=8 LLM-Closed is 9/12 at F_val >= 0.95, one seed short of the rule. Declared as its own XXZ-anchored protocol, not a one-factor change from the TFIM reference. Only LLM-Closed is executed, so no same-budget cross-method comparison exists at this cell."
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "evaluated_candidates_total": 120,
+  "evaluated_candidates_per_seed": 10,
+  "wall_clock_seconds": 226.6,
+  "api_usage": {
+    "n_calls": 81,
+    "n_repair_or_retry_calls": 9,
+    "input_tokens": 65969,
+    "output_tokens": 28059,
+    "model_snapshots": [
+      "gpt-5.4-mini-2026-03-17"
+    ],
+    "declared_model": "gpt-5.4-mini-2026-03-17",
+    "list_price_usd_per_1m": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "price_source": "https://developers.openai.com/api/docs/pricing (standard tier, read 2026-09-08)",
+    "estimated_cost_usd_at_list_price": 0.175742
+  },
+  "generation_validity": {
+    "LLM-Closed": {
+      "evaluated_candidates": 120,
+      "flagged_random_fallbacks": 7,
+      "candidates_with_recorded_invalid_errors": 7,
+      "redesign_failure_reasons": {
+        "invalid": 7
+      },
+      "warm_rejected_entries": 15
+    },
+    "note": "Random fallbacks consume candidate budget and are INCLUDED in the primary analysis. Recorded invalid-error history and a final fallback flag are distinct quantities."
+  },
+  "output_sha256": {
+    "candidate_results.csv": "e44067435dea438fe4bca887b33e2a6de4cf9ffaf7a7b47d202e2ad46acb3e52",
+    "selected_results.csv": "55249ad70a547cdd7fb3b7d3bd16381eb5663addd365773b0910adad2aab8227"
+  },
+  "test_evaluations": 0,
+  "manifest_anchor": "hamiltonian_xxz",
+  "factors_sha": "8b1212a73b6be9cc"
+}

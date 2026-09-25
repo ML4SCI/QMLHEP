@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-vqc"
+version = "0.1.0"
+description = "LLM agent for exploring quantum circuit equivalence classes via Clifford BFS"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.40",
+    "qiskit>=1.0",
+    "python-dotenv>=1.0",
+    "matplotlib>=3.8",
+    "pandas>=2.0",
+    "pylatexenc>=2.10",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "pennylane>=0.40",
+    "torch>=2.0",
+    "scikit-learn>=1.3",
+    "scipy>=1.11",
+    # Required by the deck builders in scripts/qae/ (and their tests); the
+    # robustness and budget-target reproduction commands invoke them.
+    "python-pptx>=0.6.21",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[project.scripts]
+llm-vqc = "llm_vqc.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["llm_vqc*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+# `archive/` is a read-only copy of superseded research lines (see archive/README.md)
+# and `outputs/` holds committed result artifacts, including provenance snapshots of
+# the exact script that produced a run. Neither is source: linting them would mean
+# editing a historical record. Both are excluded from lint and from pytest collection.
+extend-exclude = ["archive", "outputs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+# Legacy analysis/experiment code merged from the archived research lines is
+# grandfathered on style-only rules; new code must satisfy the full rule set.
+[tool.ruff.lint.per-file-ignores]
+"scripts/capacity_controlled/*" = ["E402", "E501", "E702", "E741", "F401", "F841", "B007", "B905", "I001"]
+"scripts/build_methodology_figures.py" = ["E501", "E741", "B905"]
+"llm_vqc/evaluation/harness.py" = ["E501"]
+"llm_vqc/experiments/capacity_controlled/*" = ["E402", "E501", "E702", "B007", "I001"]
+"llm_vqc/experiments/qae_tfim/pilot.py" = ["E501"]
+"tests/test_capacity_controlled*.py" = ["E501", "E702", "F401", "F841", "B007", "I001"]
+# `analyze_budget_targets.py` copies ITSELF into the audit output directory as a
+# provenance record of the exact code that produced the committed results, and that
+# copy's SHA-256 is pinned in outputs/qae_budget_targets_v2_20260908/file_hashes.json.
+# Reformatting the live script would break that hash and silently invalidate the
+# "reproduces byte-for-byte" claim in the study report, so it is exempted from
+# style-only rules rather than rewritten. Its logic is covered by
+# tests/test_qae_budget_targets.py.
+"scripts/qae/analyze_budget_targets.py" = ["E501", "B905"]

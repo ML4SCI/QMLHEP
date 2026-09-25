@@ -1,0 +1,30 @@
+# Local secrets — never commit (copy .env.example to .env and fill in your own key)
+.env
+
+# Environments, caches and build products
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+.DS_Store
+
+# Locally generated run directories and dataset caches (reproducible via scripts)
+/runs/
+/data/
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.bcf
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.run.xml
+paper/*.fls
+paper/*.fdb_latexmk
+paper/main.pdf

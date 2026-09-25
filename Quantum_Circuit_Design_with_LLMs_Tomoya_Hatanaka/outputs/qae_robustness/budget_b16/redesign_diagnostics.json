@@ -1,0 +1,43 @@
+{
+  "n_refine_proposals": 96,
+  "n_llm_proposals": 81,
+  "n_fallbacks": 15,
+  "edit_distance_mean": 0.5108024691358025,
+  "edit_distance_median": 0.5,
+  "changed_slots_mean": 8.17283950617284,
+  "accepted_total": 11,
+  "local_proposals_le_4_slots": {
+    "n": 15,
+    "accepted": 1
+  },
+  "global_proposals_gt_4_slots": {
+    "n": 66,
+    "accepted": 10
+  },
+  "strategy_stats": {
+    "global_redesign": {
+      "proposals": 15,
+      "accepted": 3,
+      "mean_edit_distance": 0.5583333333333333
+    },
+    "local_adjustment": {
+      "proposals": 12,
+      "accepted": 1,
+      "mean_edit_distance": 0.3541666666666667
+    },
+    "rotation_redesign": {
+      "proposals": 1,
+      "accepted": 0,
+      "mean_edit_distance": 0.75
+    },
+    "topology_redesign": {
+      "proposals": 53,
+      "accepted": 7,
+      "mean_edit_distance": 0.5283018867924528
+    }
+  },
+  "diversity": {
+    "warm_mean_pairwise_distance": 0.7758556547619047,
+    "refine_mean_pairwise_distance": 0.7023809523809522
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "source_data_commit": "e846c27fc21d06aa20e026590fcc06429f8bcfb4",
+  "execution_commit": null,
+  "analysis": "retrospective validation-only",
+  "targets": [
+    0.95,
+    0.99
+  ],
+  "required_successes": 10,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "new_model_calls": 0,
+  "new_training_runs": 0,
+  "new_test_evaluations": 0,
+  "source_files": [
+    {
+      "source_path": "outputs/qae_robustness/budget_b4/candidate_results.csv",
+      "rows": 192,
+      "source_sha256": "e3c5b09db2ed9f6ed722e1bd8b21787f9d052967a77d9c04f7d083fa42b7bba5",
+      "source_git_blob_sha": "4773ab0da1db6a96dbbac208efb1f9d25fe8387d",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/budget_b4/selected_results.csv",
+      "rows": 48,
+      "source_sha256": "81ad53cb6c9827fd322409085e2fd5656e08e65e6e19420b0b6009dc6046ef72",
+      "source_git_blob_sha": "bed404a1cc4bd54ab644d412d884573f0c993c69",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/reference/candidate_results.csv",
+      "rows": 384,
+      "source_sha256": "146f95f8bcdfcd36edbb9422f0f2b852371a9cf8bbdc7cc95ae12e90e1b55951",
+      "source_git_blob_sha": "864f1e08243ff38f30234bcae05ba3b2a3ad8877",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/reference/selected_results.csv",
+      "rows": 48,
+      "source_sha256": "1dbf60e374a76aa80bc74e38c58fd84fceaf76b3ae9bb6aa298f1d84c8ac626e",
+      "source_git_blob_sha": "a54225a7067431f62aacd235b88e27346715e107",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/budget_b16/candidate_results.csv",
+      "rows": 768,
+      "source_sha256": "c880f0860ac17ba839465e2820b4149cc4c083b586286eec185582c0a54da0d4",
+      "source_git_blob_sha": "cac6a1b3fd4d00aaab3810094249efac70086a0c",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/budget_b16/selected_results.csv",
+      "rows": 48,
+      "source_sha256": "5cd8af502abd26788ffaf5781c796902a2b06cc2f3ea234e05db11c91f42fdd5",
+      "source_git_blob_sha": "d3f95918c81d1e7390ed24edb19f77421fed355f",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/qubits_n6/candidate_results.csv",
+      "rows": 384,
+      "source_sha256": "1f30c3dba9c6c3d3d94798fed6f6f6ad91be1be2a2c384673ba972f2aacb110f",
+      "source_git_blob_sha": "0bc3cce832776b48e03818eeb4ce597972358d76",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/qubits_n6/selected_results.csv",
+      "rows": 48,
+      "source_sha256": "f02c83d9ed5fc6d1d8920128c89b819db7bdecb18d92d37a11ee46d1c7ca8e33",
+      "source_git_blob_sha": "e5353588d88d11f507372f7f16c9ced2d2c36b26",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/qubits_n8/candidate_results.csv",
+      "rows": 384,
+      "source_sha256": "401c42c6bc0b80761c88263b3473275371eb441c67b1fc7c6717b5fb1ab872ab",
+      "source_git_blob_sha": "e59d2b1c0ebf94a3ffd0b54686e49049736d2bbd",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/qubits_n8/selected_results.csv",
+      "rows": 48,
+      "source_sha256": "f14a3be53531ffde214198dcd6c33862af1e0757da42a1caea5e6ef4fa864532",
+      "source_git_blob_sha": "b9a5f53523b6d3362a63379b12f5c380779cde5a",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/hamiltonian_xxz/candidate_results.csv",
+      "rows": 384,
+      "source_sha256": "b2f6f9baae68ab6fdf5769965a6ef7858d4d3c96bf8a1b3dd58e1dfc21012cb7",
+      "source_git_blob_sha": "0774f926cfd50b9221997ccd7683f0e5a18251c2",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/hamiltonian_xxz/selected_results.csv",
+      "rows": 48,
+      "source_sha256": "610911773afbf2cbd49cda9c6cee6acbbdd7cb4aa8d324fd7c05035f616b6813",
+      "source_git_blob_sha": "760f290cbaf168f8af54802b4e5b3848c63cc040",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/model_alt/candidate_results.csv",
+      "rows": 384,
+      "source_sha256": "e398d706348e5dbbdad5a1797e7217ca8605e703fcd53cdeafe2b94aae0195e2",
+      "source_git_blob_sha": "b9b99b656e595f9fba0e5bdc41b9c31af360d277",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_robustness/model_alt/selected_results.csv",
+      "rows": 48,
+      "source_sha256": "243f5e6dbc7e5e3548e7781d926f8ed39a6d5735db88716d05a8fd8114d26970",
+      "source_git_blob_sha": "28f7aa940511f18e631c2ce09d49573a6596c2b8",
+      "excluded_columns": [
+        "train_loss",
+        "test_loss",
+        "train_fid",
+        "test_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_budget_targets_v2_20260908/target_tfim_b6/candidate_results.csv",
+      "rows": 288,
+      "source_sha256": "8292c09d790291d480ae8f61673f1f4a5753c876c597079bca7bb53b33c2ad83",
+      "source_git_blob_sha": "1a94c42c279b0cae4d73fa429ebb8b72c255bb20",
+      "excluded_columns": [
+        "train_loss",
+        "train_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_budget_targets_v2_20260908/target_tfim_b6/selected_results.csv",
+      "rows": 48,
+      "source_sha256": "e4129f73979f722868c4430490b4b0448ecbb3bc7381be2af4fa4946d674b20b",
+      "source_git_blob_sha": "696fd0a0bb147bc47d0bdf4f938a1bc91be700ab",
+      "excluded_columns": [
+        "train_loss",
+        "train_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_budget_targets_v2_20260908/target_xxz_b10/candidate_results.csv",
+      "rows": 120,
+      "source_sha256": "e44067435dea438fe4bca887b33e2a6de4cf9ffaf7a7b47d202e2ad46acb3e52",
+      "source_git_blob_sha": "2aa9b250f9ac7b2e2b970919536ff574024ad993",
+      "excluded_columns": [
+        "train_loss",
+        "train_fid"
+      ]
+    },
+    {
+      "source_path": "outputs/qae_budget_targets_v2_20260908/target_xxz_b10/selected_results.csv",
+      "rows": 12,
+      "source_sha256": "55249ad70a547cdd7fb3b7d3bd16381eb5663addd365773b0910adad2aab8227",
+      "source_git_blob_sha": "3f4683c8ad6cefc382e16b444824979f2b21ea14",
+      "excluded_columns": [
+        "train_loss",
+        "train_fid"
+      ]
+    }
+  ],
+  "warning": "Do not infer monotonicity across independently executed, budget-dependent policies. Historical test columns were discarded and no test statistic was computed."
+}
