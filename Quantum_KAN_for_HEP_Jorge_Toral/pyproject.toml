@@ -1,0 +1,59 @@
+[project]
+name = "qkans-ml4sci-2026"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11, <3.13"
+dependencies = [
+    "h5py>=3.16.0",
+    "hdf5plugin>=6.0.0",
+    "ipykernel>=7.2.0",
+    "matplotlib>=3.7.2",
+    "numpy>=2.4.6",
+    "pandas>=2.9.0",
+    "pennylane>=0.40.0",
+    "pennylane-qiskit>=0.40.0",
+    "polars>=1.41.2",
+    "pykan",
+    "pyyaml>=6.0.3",
+    "qiskit-aer>=0.17.2",
+    "qiskit-ibm-runtime>=0.40.0",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+    "tables>=3.11.0",
+    "tqdm>=4.69.0",
+]
+
+[project.optional-dependencies]
+cuda = ["torch>=2.1.0,<2.5.0"]
+cpu = ["torch>=2.1.0,<2.5.0"]
+
+[tool.uv]
+conflicts = [
+  [
+    {extra = "cuda"},
+    {extra = "cpu"}
+  ]
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu130", extra = "cuda" },
+  { index = "pytorch-cpu", extra = "cpu" },
+]
+pykan = { git = "https://github.com/kindxiaoming/pykan.git" }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
