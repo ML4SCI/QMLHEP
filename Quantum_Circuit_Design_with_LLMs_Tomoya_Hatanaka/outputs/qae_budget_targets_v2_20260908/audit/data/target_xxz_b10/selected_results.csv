@@ -1,0 +1,13 @@
+seed,method,candidate,order,phase,fallback,invalid_errors,edit_distance,strategy,val_loss,val_fid
+0,LLM-Closed,real-nn-latent-sweep,6,refine,False,,0.625,global_redesign,0.032974474130263,0.967025525869737
+1,LLM-Closed,boundary-funnel,4,explore,False,,nan,,0.05656282021671333,0.9434371797832867
+2,LLM-Closed,xxz-nearest-neighbor-latent,10,refine,False,,0.25,topology_redesign,0.04832493241198088,0.9516750675880191
+3,LLM-Closed,latent-anchored-mirror,3,explore,False,,nan,,0.05111087743875975,0.9488891225612403
+4,LLM-Closed,nn-real-braid-v1,9,refine,False,,0.4375,topology_redesign,0.04743623893027904,0.952563761069721
+5,LLM-Closed,xxz-real-nearest-neighbor-v2,9,refine,False,,0.875,topology_redesign,0.033584414167293075,0.9664155858327069
+6,LLM-Closed,nn-real-bottleneck,9,refine,False,,0.3125,topology_redesign,0.0539108344338054,0.9460891655661946
+7,LLM-Closed,alternating-real,3,explore,False,,nan,,0.05638545882529333,0.9436145411747067
+8,LLM-Closed,nn-real-sweep-01,8,refine,False,,0.875,topology_redesign,0.05218064396667843,0.9478193560333216
+9,LLM-Closed,nn-latent-pair-a,4,explore,False,,nan,,0.04716318461688529,0.9528368153831147
+10,LLM-Closed,nn-real-latent-pull,8,refine,False,,0.1875,topology_redesign,0.05051393403705351,0.9494860659629465
+11,LLM-Closed,alternating-chain,1,explore,False,,nan,,0.0561045268209428,0.9438954731790572

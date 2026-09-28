@@ -1,0 +1,76 @@
+[hamiltonian_xxz] seed 0: Random / Greedy
+[hamiltonian_xxz] seed 1: Random / Greedy
+[hamiltonian_xxz] seed 2: Random / Greedy
+[hamiltonian_xxz] seed 3: Random / Greedy
+[hamiltonian_xxz] seed 4: Random / Greedy
+[hamiltonian_xxz] seed 5: Random / Greedy
+[hamiltonian_xxz] seed 6: Random / Greedy
+[hamiltonian_xxz] seed 7: Random / Greedy
+[hamiltonian_xxz] seed 8: Random / Greedy
+[hamiltonian_xxz] seed 9: Random / Greedy
+[hamiltonian_xxz] seed 10: Random / Greedy
+[hamiltonian_xxz] seed 11: Random / Greedy
+[hamiltonian_xxz] seed 0: LLM-Closed
+[hamiltonian_xxz] seed 1: LLM-Closed
+[hamiltonian_xxz] seed 2: LLM-Closed
+[hamiltonian_xxz] seed 3: LLM-Closed
+[hamiltonian_xxz] seed 4: LLM-Closed
+[hamiltonian_xxz] seed 5: LLM-Closed
+[hamiltonian_xxz] seed 6: LLM-Closed
+[hamiltonian_xxz] seed 7: LLM-Closed
+[hamiltonian_xxz] seed 8: LLM-Closed
+[hamiltonian_xxz] seed 9: LLM-Closed
+[hamiltonian_xxz] seed 10: LLM-Closed
+[hamiltonian_xxz] seed 11: LLM-Closed
+
+=== hamiltonian_xxz (XXZ chain) ===
+                mean    median       std  count
+method                                         
+Greedy      0.733785  0.647426  0.209216     12
+LLM-Closed  0.956347  0.949443  0.010019     12
+LLM-Open    0.921532  0.921073  0.001589     12
+Random      0.809425  0.923655  0.188525     12
+{
+  "Greedy_minus_Random": {
+    "mean_paired_gain": -0.07564,
+    "cohens_dz": -0.35109,
+    "wins_b": 7,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.67725
+  },
+  "LLM-Open_minus_Random": {
+    "mean_paired_gain": 0.11211,
+    "cohens_dz": 0.59345,
+    "wins_b": 5,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.79102
+  },
+  "LLM-Closed_minus_Random": {
+    "mean_paired_gain": 0.14692,
+    "cohens_dz": 0.80052,
+    "wins_b": 11,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.00098
+  },
+  "LLM-Open_minus_Greedy": {
+    "mean_paired_gain": 0.18775,
+    "cohens_dz": 0.89492,
+    "wins_b": 7,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.06396
+  },
+  "LLM-Closed_minus_Greedy": {
+    "mean_paired_gain": 0.22256,
+    "cohens_dz": 1.08923,
+    "wins_b": 10,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.01221
+  },
+  "LLM-Closed_minus_LLM-Open": {
+    "mean_paired_gain": 0.03481,
+    "cohens_dz": 3.44635,
+    "wins_b": 12,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.00049
+  }
+}

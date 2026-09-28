@@ -1,0 +1,52 @@
+
+=== reference (Previous QAE baseline (4 qubits, TFIM, B=8, reference model)) ===
+                mean    median       std  count
+method                                         
+Greedy      0.869583  0.872715  0.075177     12
+LLM-Closed  0.967089  0.970113  0.006602     12
+LLM-Open    0.960458  0.960228  0.005569     12
+Random      0.852040  0.865819  0.067520     12
+{
+  "Greedy_minus_Random": {
+    "mean_paired_gain": 0.01754,
+    "cohens_dz": 0.21685,
+    "wins_b": 6,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.51855
+  },
+  "LLM-Open_minus_Random": {
+    "mean_paired_gain": 0.10842,
+    "cohens_dz": 1.5834,
+    "wins_b": 11,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.00098
+  },
+  "LLM-Closed_minus_Random": {
+    "mean_paired_gain": 0.11505,
+    "cohens_dz": 1.63718,
+    "wins_b": 11,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.00098
+  },
+  "LLM-Open_minus_Greedy": {
+    "mean_paired_gain": 0.09087,
+    "cohens_dz": 1.16528,
+    "wins_b": 11,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.00146
+  },
+  "LLM-Closed_minus_Greedy": {
+    "mean_paired_gain": 0.09751,
+    "cohens_dz": 1.30974,
+    "wins_b": 12,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.00049
+  },
+  "LLM-Closed_minus_LLM-Open": {
+    "mean_paired_gain": 0.00663,
+    "cohens_dz": 0.81371,
+    "wins_b": 11,
+    "n": 12,
+    "wilcoxon_exact_two_sided_p": 0.01221
+  }
+}

@@ -1,0 +1,21 @@
+# Phase 2 deterministic-resume smoke test: same run_id + same
+# reproducibility-critical fields as t1_smoke.yaml. Used to verify that
+# re-running scripts/smoke_evaluate.py against an existing result store
+# with this config resumes (skips already-completed evaluations) rather
+# than repeating them or raising IncompatibleResumeError. Changing any
+# of `task`, `training.*`, or `seed` here and re-running is the negative
+# test: it MUST raise IncompatibleResumeError instead of silently mixing
+# results.
+name: t1_smoke
+seed: 0
+params:
+  task: T1
+  scale: smoke
+  n_circuits: 3
+  training:
+    epochs: 5
+    learning_rate: 0.05
+    batch_size: 16
+    lr_decay_factor: 0.5
+    lr_decay_epochs: [2, 4]
+    weight_decay: 1.0e-5

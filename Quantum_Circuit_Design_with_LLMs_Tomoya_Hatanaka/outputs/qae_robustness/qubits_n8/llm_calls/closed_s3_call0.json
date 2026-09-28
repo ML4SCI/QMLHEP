@@ -1,0 +1,582 @@
+{
+  "proposal_id": "warm_s3",
+  "call_index": 0,
+  "system_prompt": "You are a quantum-autoencoder circuit architect. Your job is architecture proposal, not numerical optimization. Respect the exact resource budget. Use the physical structure in the task description to propose circuit hypotheses. Return circuit structure only.",
+  "user_prompt": "Compress ground states of the 8-qubit open-chain transverse-field Ising Hamiltonian H = -sum_i Z_i Z_{i+1} - h sum_i X_i, h in [0.2, 2.0], into latent qubits q0,q1,q2,q3 while trash qubits q4,q5,q6,q7 should end in |0000>. The Hamiltonian is real in the computational basis, so its ground-state amplitudes can be chosen real. Interactions are nearest-neighbor on the open chain q0-q1-q2-q3-q4-q5-q6-q7, so nearest-neighbor correlations are important. Resource contract (exact, non-negotiable): the encoder is an ordered sequence of exactly 32 gates - exactly 24 single-qubit rotations, each RX, RY, or RZ on any qubit (no per-axis quota), and exactly 8 CNOTs, each with any control and any different target (the same pair may repeat at different positions). You choose the gate ORDER freely. You do not choose rotation angles: a shared numerical optimizer trains all 24 angles identically for every method.\nOutput 4 distinct candidates. Aim for structural DIVERSITY across the candidates (different orderings, wirings, and axis patterns), while preferring hypotheses that (1) preserve a real-valued representation when useful and (2) route correlations/information from the trash qubits toward the latent qubits.\nReturn ONLY a single JSON object, no prose and no markdown fences, with this schema:\n{\"candidates\": [{\"name\": \"<short-id>\", \"gates\": [{\"g\": \"RY\", \"q\": 0}, {\"g\": \"CNOT\", \"c\": 3, \"t\": 2}, ...]}]}\nEach gates list holds exactly 32 entries in execution order: a rotation is {\"g\": \"RX\"|\"RY\"|\"RZ\", \"q\": 0-7} and a CNOT is {\"g\": \"CNOT\", \"c\": 0-7, \"t\": 0-7, c != t}. Exactly 24 rotations and exactly 8 CNOTs per candidate.",
+  "model": "gpt-5.4-mini-2026-03-17",
+  "temperature": 0.7,
+  "raw_response": "{\"candidates\":[{\"name\":\"chain-push-ry\",\"gates\":[{\"g\":\"RY\",\"q\":7},{\"g\":\"RY\",\"q\":6},{\"g\":\"CNOT\",\"c\":7,\"t\":6},{\"g\":\"RY\",\"q\":5},{\"g\":\"CNOT\",\"c\":6,\"t\":5},{\"g\":\"RY\",\"q\":4},{\"g\":\"CNOT\",\"c\":5,\"t\":4},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":4,\"t\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":3,\"t\":2},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":2,\"t\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"CNOT\",\"c\":1,\"t\":0},{\"g\":\"RY\",\"q\":7},{\"g\":\"RY\",\"q\":6},{\"g\":\"RY\",\"q\":5},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":5},{\"g\":\"RY\",\"q\":6},{\"g\":\"RY\",\"q\":7},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"RY\",\"q\":4}]},{\"name\":\"latent-funnel-rzry\",\"gates\":[{\"g\":\"RZ\",\"q\":7},{\"g\":\"RY\",\"q\":7},{\"g\":\"CNOT\",\"c\":7,\"t\":6},{\"g\":\"RZ\",\"q\":6},{\"g\":\"RY\",\"q\":6},{\"g\":\"CNOT\",\"c\":6,\"t\":5},{\"g\":\"RZ\",\"q\":5},{\"g\":\"RY\",\"q\":5},{\"g\":\"CNOT\",\"c\":5,\"t\":4},{\"g\":\"RZ\",\"q\":4},{\"g\":\"RY\",\"q\":4},{\"g\":\"CNOT\",\"c\":4,\"t\":3},{\"g\":\"RZ\",\"q\":3},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":3,\"t\":2},{\"g\":\"RZ\",\"q\":2},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":2,\"t\":1},{\"g\":\"RZ\",\"q\":1},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":1,\"t\":0},{\"g\":\"RZ\",\"q\":0},{\"g\":\"RY\",\"q\":0},{\"g\":\"CNOT\",\"c\":0,\"t\":1},{\"g\":\"RY\",\"q\":7},{\"g\":\"RY\",\"q\":6},{\"g\":\"RY\",\"q\":5},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":0}]},{\"name\":\"mirror-entangle-rxry\",\"gates\":[{\"g\":\"RX\",\"q\":0},{\"g\":\"RY\",\"q\":1},{\"g\":\"CNOT\",\"c\":0,\"t\":1},{\"g\":\"RX\",\"q\":2},{\"g\":\"RY\",\"q\":3},{\"g\":\"CNOT\",\"c\":2,\"t\":3},{\"g\":\"RX\",\"q\":4},{\"g\":\"RY\",\"q\":5},{\"g\":\"CNOT\",\"c\":4,\"t\":5},{\"g\":\"RX\",\"q\":6},{\"g\":\"RY\",\"q\":7},{\"g\":\"CNOT\",\"c\":6,\"t\":7},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":3,\"t\":2},{\"g\":\"RY\",\"q\":5},{\"g\":\"RY\",\"q\":4},{\"g\":\"CNOT\",\"c\":5,\"t\":4},{\"g\":\"RY\",\"q\":7},{\"g\":\"RY\",\"q\":6},{\"g\":\"CNOT\",\"c\":7,\"t\":6},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"CNOT\",\"c\":1,\"t\":0},{\"g\":\"RX\",\"q\":0},{\"g\":\"RX\",\"q\":1},{\"g\":\"RX\",\"q\":2},{\"g\":\"RX\",\"q\":3},{\"g\":\"RX\",\"q\":4},{\"g\":\"RX\",\"q\":5},{\"g\":\"RX\",\"q\":6},{\"g\":\"RX\",\"q\":7}]},{\"name\":\"pairwise-latent-sink\",\"gates\":[{\"g\":\"RY\",\"q\":6},{\"g\":\"CNOT\",\"c\":7,\"t\":6},{\"g\":\"RY\",\"q\":7},{\"g\":\"RY\",\"q\":4},{\"g\":\"CNOT\",\"c\":5,\"t\":4},{\"g\":\"RY\",\"q\":5},{\"g\":\"RY\",\"q\":2},{\"g\":\"CNOT\",\"c\":3,\"t\":2},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":0},{\"g\":\"CNOT\",\"c\":1,\"t\":0},{\"g\":\"RY\",\"q\":1},{\"g\":\"RZ\",\"q\":6},{\"g\":\"RZ\",\"q\":4},{\"g\":\"RZ\",\"q\":2},{\"g\":\"RZ\",\"q\":0},{\"g\":\"CNOT\",\"c\":6,\"t\":4},{\"g\":\"CNOT\",\"c\":4,\"t\":2},{\"g\":\"CNOT\",\"c\":2,\"t\":0},{\"g\":\"CNOT\",\"c\":7,\"t\":5},{\"g\":\"RY\",\"q\":7},{\"g\":\"RY\",\"q\":5},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":0},{\"g\":\"RY\",\"q\":2},{\"g\":\"RY\",\"q\":4},{\"g\":\"RY\",\"q\":6},{\"g\":\"RY\",\"q\":1},{\"g\":\"RY\",\"q\":3},{\"g\":\"RY\",\"q\":5},{\"g\":\"RY\",\"q\":7}]}]}",
+  "parsed_proposal": {
+    "candidates": [
+      {
+        "name": "chain-push-ry",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 7
+          },
+          {
+            "g": "RY",
+            "q": 6
+          },
+          {
+            "g": "CNOT",
+            "c": 7,
+            "t": 6
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "CNOT",
+            "c": 6,
+            "t": 5
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "CNOT",
+            "c": 5,
+            "t": 4
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 4,
+            "t": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 7
+          },
+          {
+            "g": "RY",
+            "q": 6
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "RY",
+            "q": 6
+          },
+          {
+            "g": "RY",
+            "q": 7
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 4
+          }
+        ]
+      },
+      {
+        "name": "latent-funnel-rzry",
+        "gates": [
+          {
+            "g": "RZ",
+            "q": 7
+          },
+          {
+            "g": "RY",
+            "q": 7
+          },
+          {
+            "g": "CNOT",
+            "c": 7,
+            "t": 6
+          },
+          {
+            "g": "RZ",
+            "q": 6
+          },
+          {
+            "g": "RY",
+            "q": 6
+          },
+          {
+            "g": "CNOT",
+            "c": 6,
+            "t": 5
+          },
+          {
+            "g": "RZ",
+            "q": 5
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "CNOT",
+            "c": 5,
+            "t": 4
+          },
+          {
+            "g": "RZ",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "CNOT",
+            "c": 4,
+            "t": 3
+          },
+          {
+            "g": "RZ",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 1
+          },
+          {
+            "g": "RZ",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RY",
+            "q": 7
+          },
+          {
+            "g": "RY",
+            "q": 6
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          }
+        ]
+      },
+      {
+        "name": "mirror-entangle-rxry",
+        "gates": [
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "CNOT",
+            "c": 0,
+            "t": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 3
+          },
+          {
+            "g": "RX",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "CNOT",
+            "c": 4,
+            "t": 5
+          },
+          {
+            "g": "RX",
+            "q": 6
+          },
+          {
+            "g": "RY",
+            "q": 7
+          },
+          {
+            "g": "CNOT",
+            "c": 6,
+            "t": 7
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "CNOT",
+            "c": 5,
+            "t": 4
+          },
+          {
+            "g": "RY",
+            "q": 7
+          },
+          {
+            "g": "RY",
+            "q": 6
+          },
+          {
+            "g": "CNOT",
+            "c": 7,
+            "t": 6
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RX",
+            "q": 0
+          },
+          {
+            "g": "RX",
+            "q": 1
+          },
+          {
+            "g": "RX",
+            "q": 2
+          },
+          {
+            "g": "RX",
+            "q": 3
+          },
+          {
+            "g": "RX",
+            "q": 4
+          },
+          {
+            "g": "RX",
+            "q": 5
+          },
+          {
+            "g": "RX",
+            "q": 6
+          },
+          {
+            "g": "RX",
+            "q": 7
+          }
+        ]
+      },
+      {
+        "name": "pairwise-latent-sink",
+        "gates": [
+          {
+            "g": "RY",
+            "q": 6
+          },
+          {
+            "g": "CNOT",
+            "c": 7,
+            "t": 6
+          },
+          {
+            "g": "RY",
+            "q": 7
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "CNOT",
+            "c": 5,
+            "t": 4
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 3,
+            "t": 2
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 1,
+            "t": 0
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RZ",
+            "q": 6
+          },
+          {
+            "g": "RZ",
+            "q": 4
+          },
+          {
+            "g": "RZ",
+            "q": 2
+          },
+          {
+            "g": "RZ",
+            "q": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 6,
+            "t": 4
+          },
+          {
+            "g": "CNOT",
+            "c": 4,
+            "t": 2
+          },
+          {
+            "g": "CNOT",
+            "c": 2,
+            "t": 0
+          },
+          {
+            "g": "CNOT",
+            "c": 7,
+            "t": 5
+          },
+          {
+            "g": "RY",
+            "q": 7
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 0
+          },
+          {
+            "g": "RY",
+            "q": 2
+          },
+          {
+            "g": "RY",
+            "q": 4
+          },
+          {
+            "g": "RY",
+            "q": 6
+          },
+          {
+            "g": "RY",
+            "q": 1
+          },
+          {
+            "g": "RY",
+            "q": 3
+          },
+          {
+            "g": "RY",
+            "q": 5
+          },
+          {
+            "g": "RY",
+            "q": 7
+          }
+        ]
+      }
+    ]
+  },
+  "validation_errors": [],
+  "input_tokens": 504,
+  "output_tokens": 1256,
+  "estimated_cost_usd": null,
+  "latency_seconds": 5.439055458060466,
+  "created_at": "2026-09-03T18:57:16.520603+00:00"
+}

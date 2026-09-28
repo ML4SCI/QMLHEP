@@ -1,0 +1,8 @@
+{
+  "n_calls": 40,
+  "input_tokens": 29127,
+  "output_tokens": 11403,
+  "model_snapshots": [
+    "gpt-5.4-mini-2026-03-17"
+  ]
+}

@@ -1,0 +1,18 @@
+# Phase 2 SMOKE-TEST scale config for T1 (Gaussian-peak regression).
+# Small epoch count and few circuits — for exercising the IR -> compiler
+# -> training -> validation pipeline end to end quickly, NOT for
+# producing a scientifically meaningful result. See t1_research.yaml
+# (not yet created — Phase 4+ concern) for research-experiment scale.
+name: t1_smoke
+seed: 0
+params:
+  task: T1
+  scale: smoke
+  n_circuits: 3
+  training:
+    epochs: 5
+    learning_rate: 0.05
+    batch_size: 16
+    lr_decay_factor: 0.5
+    lr_decay_epochs: [2, 4]
+    weight_decay: 1.0e-5

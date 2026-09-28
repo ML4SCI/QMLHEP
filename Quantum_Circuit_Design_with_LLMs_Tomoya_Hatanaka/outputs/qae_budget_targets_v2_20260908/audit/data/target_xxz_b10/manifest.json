@@ -1,0 +1,178 @@
+{
+  "cell": {
+    "key": "target_xxz_b10",
+    "label": "4-qubit XXZ, reference model, B = 10 (LLM-Closed only)",
+    "anchor_key": "hamiltonian_xxz",
+    "factors": {
+      "n_qubits": 4,
+      "family": "XXZ",
+      "budget": 10,
+      "model": "gpt-5.4-mini-2026-03-17"
+    },
+    "n_warm": 5,
+    "n_refine": 5,
+    "methods": [
+      "LLM-Closed"
+    ],
+    "rationale": "XXZ anchor boundary probe: XXZ B=8 LLM-Closed is 9/12 at F_val >= 0.95, one seed short of the rule. Declared as its own XXZ-anchored protocol, not a one-factor change from the TFIM reference. Only LLM-Closed is executed, so no same-budget cross-method comparison exists at this cell."
+  },
+  "manifest": {
+    "key": "target_xxz_b10",
+    "factor": "budget",
+    "label": "4-qubit XXZ, reference model, B = 10 (LLM-Closed only)",
+    "anchor_key": "hamiltonian_xxz",
+    "anchor_factors": {
+      "n_qubits": 4,
+      "family": "XXZ",
+      "budget": 8,
+      "model": "gpt-5.4-mini-2026-03-17"
+    },
+    "anchor_changed_factors_vs_study_reference": [
+      "family"
+    ],
+    "changed_factors": [
+      "budget"
+    ],
+    "factors": {
+      "n_qubits": 4,
+      "family": "XXZ",
+      "budget": 10,
+      "model": "gpt-5.4-mini-2026-03-17"
+    },
+    "frozen": {
+      "llm_workflow": {
+        "system_prompt_sha": "0dba9b77ef344c51",
+        "temperature": 0.7,
+        "max_repair_attempts": 2,
+        "reference_max_output_tokens": 6000,
+        "call_and_retry_logic_sha": "5c03c2343c1c29f4",
+        "prompt_template_sha": "69f7c7504c0fd6b3:1b0feca2b3bf1541",
+        "candidate_absorption_sha": "ba10c874667b9e62",
+        "deficit_policy": "bounded capacity repair, then flagged random draws"
+      },
+      "output_schema": {
+        "validator_sha": "24fd41b579046a34",
+        "gate_set": [
+          "RX",
+          "RY",
+          "RZ",
+          "CNOT"
+        ],
+        "angles_chosen_by": "shared numerical optimizer (never the LLM)"
+      },
+      "trainer": {
+        "source_sha": "c61127a7c9704a73",
+        "optimizer": "Adam",
+        "learning_rate": 0.05,
+        "epochs": 60,
+        "init": "uniform(-0.05, 0.05)",
+        "dtype": "complex128/float64",
+        "checkpoint": "best validation loss",
+        "loss": "1 - mean trash fidelity",
+        "train_seed_rule_sha": "fae7fcd143138a78"
+      },
+      "splits": {
+        "source_sha": "77789ed7ad9aa78e",
+        "n_train": 32,
+        "n_val": 12,
+        "n_test": 64,
+        "train_val_draw": "uniform(0.2, 2.0), sorted",
+        "test_grid": "linspace(0.215, 1.985, 64)",
+        "parameter_stream": "default_rng(10_000 + seed)"
+      },
+      "method_logic": {
+        "random_sha": "072d424d09819798",
+        "greedy_sha": "6968caa0e063ced4",
+        "open_sha": "8503d917fe123fab",
+        "closed_sha": "8827744d0cd17a2d",
+        "space_sha": "8ff68796128aa400",
+        "exploration_refinement_split": "50/50"
+      },
+      "rng_streams": {
+        "random": 62000,
+        "greedy": 93000,
+        "closed_fallback": 86000,
+        "warm_deficit": 95000,
+        "open_deficit": 999999
+      },
+      "analysis": {
+        "primary_metric": "held_out_test_trash_fidelity",
+        "selection": "lowest validation loss among the B evaluated candidates",
+        "feedback": "validation only",
+        "test_reads": "once, after selection",
+        "paired_seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "bootstrap_resamples": 10000,
+        "bootstrap_seed": 0,
+        "wilcoxon": "exact, two-sided",
+        "sign_test": "binomtest, two-sided",
+        "effect_size": "cohens_dz",
+        "reported_contrasts": [
+          "LLM-Closed_minus_LLM-Open",
+          "LLM-Open_minus_Random",
+          "LLM-Closed_minus_Random",
+          "Greedy_minus_Random"
+        ]
+      },
+      "width_rule": "3 trainable rotations + 1 CNOT per qubit, for every method",
+      "latent_trash_rule": "first n/2 qubits latent, last n/2 trash"
+    },
+    "derived": {
+      "n_rotations": 12,
+      "n_cnots": 4,
+      "n_gates": 16,
+      "latent_qubits": [
+        0,
+        1
+      ],
+      "trash_qubits": [
+        2,
+        3
+      ],
+      "n_warm": 5,
+      "n_refine": 5,
+      "task_card_sha": "627da2b29678df2f",
+      "schema_card_sha": "eeb25dedc75360b0",
+      "open_prompt_sha": "2b6a10f5ee86d48b",
+      "warm_prompt_sha": "ebfc19a25c12b182",
+      "redesign_prompt_template_sha": "5608498ae7bff754",
+      "max_output_tokens_open": 6000,
+      "max_output_tokens_warm": 6000,
+      "max_output_tokens_refine": 6000
+    },
+    "hamiltonian_substitution_check": {
+      "identical_after_undoing_fact_substitution": true,
+      "residual_difference": "",
+      "length_delta_bytes": 43
+    }
+  },
+  "violations": [],
+  "test_policy": "no candidate is evaluated on the test set in this study",
+  "column_allowlist": [
+    "seed",
+    "method",
+    "candidate",
+    "order",
+    "phase",
+    "fallback",
+    "invalid_errors",
+    "edit_distance",
+    "strategy",
+    "val_loss",
+    "val_fid",
+    "train_loss",
+    "train_fid"
+  ]
+}

@@ -1,0 +1,1658 @@
+{
+  "endpoints": [
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "Random",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8014884527030656,
+      "tenth_largest_validation": 0.7637670738782655,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "Random",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8014884527030656,
+      "tenth_largest_validation": 0.7637670738782655,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "Greedy",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.7641929699462613,
+      "tenth_largest_validation": 0.6721803438085355,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "Greedy",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.7641929699462613,
+      "tenth_largest_validation": 0.6721803438085355,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8735482448701083,
+      "tenth_largest_validation": 0.8513417256885689,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8735482448701083,
+      "tenth_largest_validation": 0.8513417256885689,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "successes": 8,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9471932611764177,
+      "tenth_largest_validation": 0.9096566770597576,
+      "successes_without_fallback_candidates_diagnostic_only": 8
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "successes": 1,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9471932611764177,
+      "tenth_largest_validation": 0.9096566770597576,
+      "successes_without_fallback_candidates_diagnostic_only": 1
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.95,
+      "successes": 1,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8597526933019597,
+      "tenth_largest_validation": 0.7664070044731502,
+      "successes_without_fallback_candidates_diagnostic_only": 1
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8597526933019597,
+      "tenth_largest_validation": 0.7664070044731502,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.95,
+      "successes": 1,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8732220805653248,
+      "tenth_largest_validation": 0.8257051416348157,
+      "successes_without_fallback_candidates_diagnostic_only": 1
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8732220805653248,
+      "tenth_largest_validation": 0.8257051416348157,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "successes": 10,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": true,
+      "mean_validation": 0.9618344396874143,
+      "tenth_largest_validation": 0.9575162253566862,
+      "successes_without_fallback_candidates_diagnostic_only": 10
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9618344396874143,
+      "tenth_largest_validation": 0.9575162253566862,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "successes": 12,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": true,
+      "mean_validation": 0.9697590784549026,
+      "tenth_largest_validation": 0.959729165530775,
+      "successes_without_fallback_candidates_diagnostic_only": 12
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9697590784549026,
+      "tenth_largest_validation": 0.959729165530775,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "Random",
+      "target": 0.95,
+      "successes": 2,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.896756344545752,
+      "tenth_largest_validation": 0.8630527602776562,
+      "successes_without_fallback_candidates_diagnostic_only": 2
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "Random",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.896756344545752,
+      "tenth_largest_validation": 0.8630527602776562,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "Greedy",
+      "target": 0.95,
+      "successes": 3,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9104320847795995,
+      "tenth_largest_validation": 0.8943155227175384,
+      "successes_without_fallback_candidates_diagnostic_only": 3
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "Greedy",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9104320847795995,
+      "tenth_largest_validation": 0.8943155227175384,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "successes": 12,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": true,
+      "mean_validation": 0.9702695591483174,
+      "tenth_largest_validation": 0.9627423513624076,
+      "successes_without_fallback_candidates_diagnostic_only": 12
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9702695591483174,
+      "tenth_largest_validation": 0.9627423513624076,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "successes": 11,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": true,
+      "mean_validation": 0.968815580892069,
+      "tenth_largest_validation": 0.9648728178837525,
+      "successes_without_fallback_candidates_diagnostic_only": 11
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.968815580892069,
+      "tenth_largest_validation": 0.9648728178837525,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.7485827049221553,
+      "tenth_largest_validation": 0.7027654412281099,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.7485827049221553,
+      "tenth_largest_validation": 0.7027654412281099,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.70677038499334,
+      "tenth_largest_validation": 0.6388690692167461,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.70677038499334,
+      "tenth_largest_validation": 0.6388690692167461,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "successes": 2,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9272246036406149,
+      "tenth_largest_validation": 0.915775227710343,
+      "successes_without_fallback_candidates_diagnostic_only": 2
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9272246036406149,
+      "tenth_largest_validation": 0.915775227710343,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8764809695710515,
+      "tenth_largest_validation": 0.8186182013578397,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8764809695710515,
+      "tenth_largest_validation": 0.8186182013578397,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.6051995800207872,
+      "tenth_largest_validation": 0.5291273547268036,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.6051995800207872,
+      "tenth_largest_validation": 0.5291273547268036,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.5469436932292921,
+      "tenth_largest_validation": 0.39131405207577546,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.5469436932292921,
+      "tenth_largest_validation": 0.39131405207577546,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.881987924646537,
+      "tenth_largest_validation": 0.8623845346499849,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.881987924646537,
+      "tenth_largest_validation": 0.8623845346499849,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8246287277935628,
+      "tenth_largest_validation": 0.6865798967117067,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8246287277935628,
+      "tenth_largest_validation": 0.6865798967117067,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.95,
+      "successes": 2,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8114660409810732,
+      "tenth_largest_validation": 0.6321536461940833,
+      "successes_without_fallback_candidates_diagnostic_only": 2
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8114660409810732,
+      "tenth_largest_validation": 0.6321536461940833,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.95,
+      "successes": 3,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.7377450085887352,
+      "tenth_largest_validation": 0.49999996950530834,
+      "successes_without_fallback_candidates_diagnostic_only": 3
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.99,
+      "successes": 1,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.7377450085887352,
+      "tenth_largest_validation": 0.49999996950530834,
+      "successes_without_fallback_candidates_diagnostic_only": 1
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9211663851470654,
+      "tenth_largest_validation": 0.9196221463351538,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9211663851470654,
+      "tenth_largest_validation": 0.9196221463351538,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "successes": 9,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9587821183450974,
+      "tenth_largest_validation": 0.9485917203437482,
+      "successes_without_fallback_candidates_diagnostic_only": 9
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9587821183450974,
+      "tenth_largest_validation": 0.9485917203437482,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.95,
+      "successes": 1,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8597526933019597,
+      "tenth_largest_validation": 0.7664070044731502,
+      "successes_without_fallback_candidates_diagnostic_only": 1
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8597526933019597,
+      "tenth_largest_validation": 0.7664070044731502,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.95,
+      "successes": 1,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8732220805653248,
+      "tenth_largest_validation": 0.8257051416348157,
+      "successes_without_fallback_candidates_diagnostic_only": 1
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8732220805653248,
+      "tenth_largest_validation": 0.8257051416348157,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "successes": 7,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9503845080907909,
+      "tenth_largest_validation": 0.9442478450765099,
+      "successes_without_fallback_candidates_diagnostic_only": 7
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9503845080907909,
+      "tenth_largest_validation": 0.9442478450765099,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "successes": 5,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9224852240593866,
+      "tenth_largest_validation": 0.8776823810021798,
+      "successes_without_fallback_candidates_diagnostic_only": 5
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9224852240593866,
+      "tenth_largest_validation": 0.8776823810021798,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "Random",
+      "target": 0.95,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8415259631969716,
+      "tenth_largest_validation": 0.7664070044731502,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "Random",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.8415259631969716,
+      "tenth_largest_validation": 0.7664070044731502,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "Greedy",
+      "target": 0.95,
+      "successes": 2,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.859970932755928,
+      "tenth_largest_validation": 0.8187535973818166,
+      "successes_without_fallback_candidates_diagnostic_only": 2
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "Greedy",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.859970932755928,
+      "tenth_largest_validation": 0.8187535973818166,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "successes": 12,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": true,
+      "mean_validation": 0.9695612312830775,
+      "tenth_largest_validation": 0.9628459331777605,
+      "successes_without_fallback_candidates_diagnostic_only": 12
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9695612312830775,
+      "tenth_largest_validation": 0.9628459331777605,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "successes": 8,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9573006160013992,
+      "tenth_largest_validation": 0.934492921196097,
+      "successes_without_fallback_candidates_diagnostic_only": 8
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.9573006160013992,
+      "tenth_largest_validation": 0.934492921196097,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    },
+    {
+      "condition": "target_xxz_b10",
+      "configured_budget": 10,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "successes": 5,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.951145638333671,
+      "tenth_largest_validation": 0.9438954731790572,
+      "successes_without_fallback_candidates_diagnostic_only": 5
+    },
+    {
+      "condition": "target_xxz_b10",
+      "configured_budget": 10,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "successes": 0,
+      "required": 10,
+      "n_seeds": 12,
+      "passes": false,
+      "mean_validation": 0.951145638333671,
+      "tenth_largest_validation": 0.9438954731790572,
+      "successes_without_fallback_candidates_diagnostic_only": 0
+    }
+  ],
+  "prefixes": [
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "Random",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "Random",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "Greedy",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "Greedy",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b4",
+      "configured_budget": 4,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": 8,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": 3,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "reference",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "Random",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "Random",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "Greedy",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "Greedy",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": 3,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": 9,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "budget_b16",
+      "configured_budget": 16,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n6",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "qubits_n8",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "Random",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "Greedy",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "model_alt",
+      "configured_budget": 8,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "Random",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "Random",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "Greedy",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "Greedy",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "LLM-Open",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": 2,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "LLM-Open",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "target_tfim_b6",
+      "configured_budget": 6,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "target_xxz_b10",
+      "configured_budget": 10,
+      "method": "LLM-Closed",
+      "target": 0.95,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    },
+    {
+      "condition": "target_xxz_b10",
+      "configured_budget": 10,
+      "method": "LLM-Closed",
+      "target": 0.99,
+      "first_k_with_10_of_12_in_this_trace": null,
+      "interpretation": "within-run prefix only; not an independently executed budget"
+    }
+  ],
+  "validity": [
+    {
+      "condition": "budget_b4",
+      "method": "Random",
+      "evaluated_candidates": 48,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "budget_b4",
+      "method": "Greedy",
+      "evaluated_candidates": 48,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "budget_b4",
+      "method": "LLM-Open",
+      "evaluated_candidates": 48,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "budget_b4",
+      "method": "LLM-Closed",
+      "evaluated_candidates": 48,
+      "fallback_candidates": 3,
+      "candidates_with_recorded_invalid_errors": 3,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "reference",
+      "method": "Random",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "reference",
+      "method": "Greedy",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "reference",
+      "method": "LLM-Open",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "reference",
+      "method": "LLM-Closed",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 8,
+      "candidates_with_recorded_invalid_errors": 8,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "budget_b16",
+      "method": "Random",
+      "evaluated_candidates": 192,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "budget_b16",
+      "method": "Greedy",
+      "evaluated_candidates": 192,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "budget_b16",
+      "method": "LLM-Open",
+      "evaluated_candidates": 192,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "budget_b16",
+      "method": "LLM-Closed",
+      "evaluated_candidates": 192,
+      "fallback_candidates": 15,
+      "candidates_with_recorded_invalid_errors": 15,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "qubits_n6",
+      "method": "Random",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "qubits_n6",
+      "method": "Greedy",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "qubits_n6",
+      "method": "LLM-Open",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "qubits_n6",
+      "method": "LLM-Closed",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 29,
+      "candidates_with_recorded_invalid_errors": 13,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "qubits_n8",
+      "method": "Random",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "qubits_n8",
+      "method": "Greedy",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "qubits_n8",
+      "method": "LLM-Open",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "qubits_n8",
+      "method": "LLM-Closed",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 22,
+      "candidates_with_recorded_invalid_errors": 14,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "method": "Random",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "method": "Greedy",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "method": "LLM-Open",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "hamiltonian_xxz",
+      "method": "LLM-Closed",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 8,
+      "candidates_with_recorded_invalid_errors": 8,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "model_alt",
+      "method": "Random",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "model_alt",
+      "method": "Greedy",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "model_alt",
+      "method": "LLM-Open",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 60,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "model_alt",
+      "method": "LLM-Closed",
+      "evaluated_candidates": 96,
+      "fallback_candidates": 7,
+      "candidates_with_recorded_invalid_errors": 3,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "target_tfim_b6",
+      "method": "Random",
+      "evaluated_candidates": 72,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "target_tfim_b6",
+      "method": "Greedy",
+      "evaluated_candidates": 72,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "target_tfim_b6",
+      "method": "LLM-Open",
+      "evaluated_candidates": 72,
+      "fallback_candidates": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "target_tfim_b6",
+      "method": "LLM-Closed",
+      "evaluated_candidates": 72,
+      "fallback_candidates": 5,
+      "candidates_with_recorded_invalid_errors": 4,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    },
+    {
+      "condition": "target_xxz_b10",
+      "method": "LLM-Closed",
+      "evaluated_candidates": 120,
+      "fallback_candidates": 7,
+      "candidates_with_recorded_invalid_errors": 7,
+      "note": "Invalid-error history and final random fallback are distinct; no candidate removed from primary analysis."
+    }
+  ]
+}

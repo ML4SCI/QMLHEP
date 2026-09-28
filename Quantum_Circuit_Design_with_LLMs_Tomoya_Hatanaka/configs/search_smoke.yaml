@@ -1,0 +1,18 @@
+# Stage 7 SMOKE comparison across every implemented search arm.
+# System validation only -- NOT scientific evidence (small budget, single
+# seed, fast training). See LLM-VQC_MASTER_PLAN.md Section 9 Phase 6 for
+# the actual pilot-scale settings, used separately in Stage 8.
+name: search_smoke
+seed: 0
+params:
+  task: T1
+  budget: 8
+  arms: [random, greedy, evolutionary, llm_iter, llm_evo]
+  interrupt_and_resume_arm: random
+  training:
+    epochs: 3
+    learning_rate: 0.05
+    batch_size: 16
+    lr_decay_factor: 0.5
+    lr_decay_epochs: [1, 2]
+    weight_decay: 1.0e-5

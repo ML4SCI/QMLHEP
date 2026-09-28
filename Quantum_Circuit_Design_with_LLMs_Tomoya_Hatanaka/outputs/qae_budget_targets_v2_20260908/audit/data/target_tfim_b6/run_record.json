@@ -1,0 +1,91 @@
+{
+  "cell": {
+    "key": "target_tfim_b6",
+    "label": "4-qubit TFIM, reference model, B = 6",
+    "anchor_key": "reference",
+    "factors": {
+      "n_qubits": 4,
+      "family": "TFIM",
+      "budget": 6,
+      "model": "gpt-5.4-mini-2026-03-17"
+    },
+    "n_warm": 3,
+    "n_refine": 3,
+    "methods": [
+      "Random",
+      "Greedy",
+      "LLM-Open",
+      "LLM-Closed"
+    ],
+    "rationale": "TFIM reference anchor: B=4 fails (LLM-Open 0/12, LLM-Closed 8/12) and B=8 passes (10/12, 12/12) at F_val >= 0.95, so B=6 is the first-priority unverified even budget between them. All four methods run at the same B so the controls are budget-matched."
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "evaluated_candidates_total": 288,
+  "evaluated_candidates_per_seed": 6,
+  "wall_clock_seconds": 151.5,
+  "api_usage": {
+    "n_calls": 57,
+    "n_repair_or_retry_calls": 0,
+    "input_tokens": 43547,
+    "output_tokens": 18187,
+    "model_snapshots": [
+      "gpt-5.4-mini-2026-03-17"
+    ],
+    "declared_model": "gpt-5.4-mini-2026-03-17",
+    "list_price_usd_per_1m": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "price_source": "https://developers.openai.com/api/docs/pricing (standard tier, read 2026-09-08)",
+    "estimated_cost_usd_at_list_price": 0.114502
+  },
+  "generation_validity": {
+    "Random": {
+      "evaluated_candidates": 72,
+      "flagged_random_fallbacks": 0,
+      "candidates_with_recorded_invalid_errors": 0
+    },
+    "Greedy": {
+      "evaluated_candidates": 72,
+      "flagged_random_fallbacks": 0,
+      "candidates_with_recorded_invalid_errors": 0
+    },
+    "LLM-Open": {
+      "evaluated_candidates": 72,
+      "flagged_random_fallbacks": 0,
+      "candidates_with_recorded_invalid_errors": 0,
+      "pool_rejected_entries": 0,
+      "pool_fallback_entries": 0
+    },
+    "LLM-Closed": {
+      "evaluated_candidates": 72,
+      "flagged_random_fallbacks": 5,
+      "candidates_with_recorded_invalid_errors": 4,
+      "redesign_failure_reasons": {
+        "invalid": 4
+      },
+      "warm_rejected_entries": 13
+    },
+    "note": "Random fallbacks consume candidate budget and are INCLUDED in the primary analysis. Recorded invalid-error history and a final fallback flag are distinct quantities."
+  },
+  "output_sha256": {
+    "candidate_results.csv": "8292c09d790291d480ae8f61673f1f4a5753c876c597079bca7bb53b33c2ad83",
+    "selected_results.csv": "e4129f73979f722868c4430490b4b0448ecbb3bc7381be2af4fa4946d674b20b"
+  },
+  "test_evaluations": 0,
+  "manifest_anchor": "reference",
+  "factors_sha": "0ecacf666b66745c"
+}

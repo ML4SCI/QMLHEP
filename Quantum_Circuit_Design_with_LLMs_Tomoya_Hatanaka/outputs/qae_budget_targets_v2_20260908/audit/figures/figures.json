@@ -1,0 +1,46 @@
+{
+  "figures": [
+    "attainment_budget_b16.png",
+    "attainment_budget_b4.png",
+    "attainment_hamiltonian_xxz.png",
+    "attainment_model_alt.png",
+    "attainment_qubits_n6.png",
+    "attainment_qubits_n8.png",
+    "attainment_reference.png",
+    "attainment_target_tfim_b6.png",
+    "attainment_target_xxz_b10.png",
+    "first_hit_budget_b16.png",
+    "first_hit_budget_b4.png",
+    "first_hit_hamiltonian_xxz.png",
+    "first_hit_model_alt.png",
+    "first_hit_qubits_n6.png",
+    "first_hit_qubits_n8.png",
+    "first_hit_reference.png",
+    "first_hit_target_tfim_b6.png",
+    "first_hit_target_xxz_b10.png",
+    "ladder_tfim.png",
+    "ladder_xxz.png",
+    "margin_tfim_open.png",
+    "margin_xxz.png",
+    "mean_best_budget_b16.png",
+    "mean_best_budget_b4.png",
+    "mean_best_hamiltonian_xxz.png",
+    "mean_best_model_alt.png",
+    "mean_best_qubits_n6.png",
+    "mean_best_qubits_n8.png",
+    "mean_best_reference.png",
+    "mean_best_target_tfim_b6.png",
+    "mean_best_target_xxz_b10.png"
+  ],
+  "metric": "validation trash fidelity",
+  "targets": [
+    0.95,
+    0.99
+  ],
+  "n_seeds": 12,
+  "pass_rule": "10 of 12 paired seeds",
+  "measured_in_this_study": [
+    "target_tfim_b6",
+    "target_xxz_b10"
+  ]
+}

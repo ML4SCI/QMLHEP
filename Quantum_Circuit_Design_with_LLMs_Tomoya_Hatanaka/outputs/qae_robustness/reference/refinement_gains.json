@@ -1,0 +1,28 @@
+{
+  "Greedy": {
+    "mean_val_gain": 0.017193741834057124,
+    "mean_test_gain": 0.01586065391681309,
+    "median_test_gain": 0.0018871095812742489,
+    "test_gain_bootstrap_95ci": [
+      0.004379778277162881,
+      0.02883230056229806
+    ],
+    "seeds_improved": 10,
+    "seeds_unchanged": 2,
+    "n": 12,
+    "wilcoxon_p_nonzero_diffs": 0.001953125
+  },
+  "LLM-Closed": {
+    "mean_val_gain": 0.018063642893184878,
+    "mean_test_gain": 0.014256441213726887,
+    "median_test_gain": 0.00015320092670878527,
+    "test_gain_bootstrap_95ci": [
+      0.003212283698003859,
+      0.02870721070243279
+    ],
+    "seeds_improved": 6,
+    "seeds_unchanged": 6,
+    "n": 12,
+    "wilcoxon_p_nonzero_diffs": 0.03125
+  }
+}
