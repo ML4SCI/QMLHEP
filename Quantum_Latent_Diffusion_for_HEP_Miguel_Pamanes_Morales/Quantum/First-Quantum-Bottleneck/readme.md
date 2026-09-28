@@ -1,0 +1,1 @@
+For this initial experiment, a PQC was integrated into the bottleneck. The quantum component is introduced almost at the end of the pipeline, with everything before it serving as the classical baseline.

@@ -1,0 +1,1 @@
+In this experiment, we implemented a Pure Patchwise Quantum Denoiser. While the VAE remains classical, the standard U-Net is completely replaced by a fully quantum model. Additionally, we added a classical mixer to allow the patches to share information and capture context from their neighbors.
