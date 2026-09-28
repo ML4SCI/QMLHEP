@@ -1,0 +1,1 @@
+To continue improving the VAE, we transitioned to a slightly more complex dataset with well-defined structures: the Dogs vs. Cats dataset. We chose this approach to ensure the network functions correctly before moving on to the Quark-Gluon dataset, which tends to have much sparser data.

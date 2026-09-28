@@ -1,0 +1,1 @@
+In this experiment, we implemented a Pure Patchwise Quantum Denoiser. While the overall pipeline is not fully quantum—since the VAE remains classical—the traditional U-Net is completely replaced by a fully quantum model that denoises the data patch by patch.

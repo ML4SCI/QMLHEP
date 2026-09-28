@@ -1,0 +1,1 @@
+In this second example, we reimplement both an Autoencoder and a VAE, but modify their structure compared to the first example. For this case, we design a deeper architecture using convolutional layers instead of linear layers. Additionally, we train the model for more epochs and implement a VAE variant known as $\beta$-VAE.
